@@ -1,0 +1,28 @@
+Source: https://raw.githubusercontent.com/liberfa/erfa/v2.0.1/src/t_erfa_c.c
+
+static void t_g2icrs(int *status)
+/*
+**  - - - - - - - - -
+**   t _ g 2 i c r s
+**  - - - - - - - - -
+**
+**  Test eraG2icrs function.
+**
+**  Returned:
+**     status    int         FALSE = success, TRUE = fail
+**
+**  Called:  eraG2icrs, vvd
+**
+**  This revision:  2015 January 30
+*/
+{
+   double dl, db, dr, dd;
+
+
+   dl =  5.5850536063818546461558105;
+   db = -0.7853981633974483096156608;
+   eraG2icrs (dl, db, &dr, &dd);
+   vvd(dr,  5.9338074302227188048671, 1e-14, "eraG2icrs", "R", status);
+   vvd(dd, -1.1784870613579944551541, 1e-14, "eraG2icrs", "D", status);
+ }
+

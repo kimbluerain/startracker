@@ -1,0 +1,32 @@
+// AGP built-in Kotlin: align the Android and plain JVM compilers explicitly.
+// https://developer.android.com/build/releases/agp-9-0-0-release-notes
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:2.4.21'
+    }
+}
+
+plugins {
+    id 'com.android.application' version '9.4.0' apply false
+    id 'com.android.library' version '9.4.0' apply false
+    id 'org.jetbrains.kotlin.plugin.compose' version '2.4.21' apply false
+}
+
+allprojects {
+    dependencyLocking {
+        lockAllConfigurations()
+        // Kotlin 2.4.21's metadata-only facade has no artifact and redirects to
+        // stdlib 2.4.21. Gradle 9.6 omits it from runtime lock generation but
+        // checks it during replay. Keep its .module SHA verified; all actual
+        // stdlib binaries and the target version remain locked normally.
+        ignoredDependencies.add('org.jetbrains.kotlin:kotlin-stdlib-common')
+    }
+}
+
+tasks.register('clean', Delete) {
+    delete rootProject.layout.buildDirectory
+}

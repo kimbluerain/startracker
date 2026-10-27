@@ -1,0 +1,1233 @@
+{
+  "metadata": {
+    "source": "JPL Horizons DE441, UTC, AIRLESS, observer center",
+    "eventUse": "Independent azimuth at computed exact event instant; these angles do not validate event time.",
+    "futureCaveat": "2050 freezes last leap-second and EOP prediction; model regression only."
+  },
+  "fixtures": [
+    {
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0,
+        "zone": "Asia/Shanghai"
+      },
+      "target": "SUN",
+      "kind": "RISE",
+      "instantUtc": "2000-02-28T22:26:45.383Z",
+      "azimuthDeg": 98.730315819,
+      "altitudeDeg": -0.834840839,
+      "rawFile": "event-hangzhou-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0,
+        "zone": "Asia/Shanghai"
+      },
+      "target": "SUN",
+      "kind": "SET",
+      "instantUtc": "2000-02-29T09:57:28.909Z",
+      "azimuthDeg": 261.481497317,
+      "altitudeDeg": -0.83676154,
+      "rawFile": "event-hangzhou-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0,
+        "zone": "Asia/Shanghai"
+      },
+      "target": "SUN",
+      "kind": "RISE",
+      "instantUtc": "2026-10-22T22:06:38.418Z",
+      "azimuthDeg": 102.620332747,
+      "altitudeDeg": -0.835010146,
+      "rawFile": "event-hangzhou-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0,
+        "zone": "Asia/Shanghai"
+      },
+      "target": "SUN",
+      "kind": "SET",
+      "instantUtc": "2026-10-23T09:20:28.748Z",
+      "azimuthDeg": 257.18822817,
+      "altitudeDeg": -0.834070922,
+      "rawFile": "event-hangzhou-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0,
+        "zone": "Asia/Shanghai"
+      },
+      "target": "SUN",
+      "kind": "RISE",
+      "instantUtc": "2050-06-20T20:58:13.065Z",
+      "azimuthDeg": 62.036998045,
+      "altitudeDeg": -0.829330643,
+      "rawFile": "event-hangzhou-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0,
+        "zone": "Asia/Shanghai"
+      },
+      "target": "SUN",
+      "kind": "SET",
+      "instantUtc": "2050-06-21T11:04:13.471Z",
+      "azimuthDeg": 297.962505411,
+      "altitudeDeg": -0.828636255,
+      "rawFile": "event-hangzhou-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0,
+        "zone": "Asia/Shanghai"
+      },
+      "target": "MOON",
+      "kind": "RISE",
+      "instantUtc": "2000-02-28T18:04:12.359Z",
+      "azimuthDeg": 113.734385158,
+      "altitudeDeg": -0.811522775,
+      "rawFile": "event-hangzhou-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0,
+        "zone": "Asia/Shanghai"
+      },
+      "target": "MOON",
+      "kind": "SET",
+      "instantUtc": "2000-02-29T04:42:59.912Z",
+      "azimuthDeg": 245.766675509,
+      "altitudeDeg": -0.813961214,
+      "rawFile": "event-hangzhou-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0,
+        "zone": "Asia/Shanghai"
+      },
+      "target": "MOON",
+      "kind": "SET",
+      "instantUtc": "2026-10-22T18:51:07.981Z",
+      "azimuthDeg": 265.294737652,
+      "altitudeDeg": -0.826180099,
+      "rawFile": "event-hangzhou-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0,
+        "zone": "Asia/Shanghai"
+      },
+      "target": "MOON",
+      "kind": "RISE",
+      "instantUtc": "2026-10-23T07:25:55.935Z",
+      "azimuthDeg": 90.975658673,
+      "altitudeDeg": -0.826694932,
+      "rawFile": "event-hangzhou-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0,
+        "zone": "Asia/Shanghai"
+      },
+      "target": "MOON",
+      "kind": "RISE",
+      "instantUtc": "2050-06-20T22:36:36.721Z",
+      "azimuthDeg": 69.307317178,
+      "altitudeDeg": -0.815269081,
+      "rawFile": "event-hangzhou-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0,
+        "zone": "Asia/Shanghai"
+      },
+      "target": "MOON",
+      "kind": "SET",
+      "instantUtc": "2050-06-21T12:25:26.740Z",
+      "azimuthDeg": 289.040713821,
+      "altitudeDeg": -0.818755655,
+      "rawFile": "event-hangzhou-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0,
+        "zone": "Australia/Sydney"
+      },
+      "target": "SUN",
+      "kind": "RISE",
+      "instantUtc": "2000-02-28T19:42:01.967Z",
+      "azimuthDeg": 100.214960152,
+      "altitudeDeg": -0.834490221,
+      "rawFile": "event-sydney-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0,
+        "zone": "Australia/Sydney"
+      },
+      "target": "SUN",
+      "kind": "SET",
+      "instantUtc": "2000-02-29T08:32:48.867Z",
+      "azimuthDeg": 260.028933295,
+      "altitudeDeg": -0.836755639,
+      "rawFile": "event-sydney-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0,
+        "zone": "Australia/Sydney"
+      },
+      "target": "SUN",
+      "kind": "RISE",
+      "instantUtc": "2026-10-22T19:04:45.131Z",
+      "azimuthDeg": 104.176706217,
+      "altitudeDeg": -0.834739985,
+      "rawFile": "event-sydney-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0,
+        "zone": "Australia/Sydney"
+      },
+      "target": "SUN",
+      "kind": "SET",
+      "instantUtc": "2026-10-23T08:14:54.243Z",
+      "azimuthDeg": 255.58923067,
+      "altitudeDeg": -0.834065468,
+      "rawFile": "event-sydney-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0,
+        "zone": "Australia/Sydney"
+      },
+      "target": "SUN",
+      "kind": "RISE",
+      "instantUtc": "2050-06-20T21:00:03.553Z",
+      "azimuthDeg": 62.013530363,
+      "altitudeDeg": -0.829043762,
+      "rawFile": "event-sydney-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0,
+        "zone": "Australia/Sydney"
+      },
+      "target": "SUN",
+      "kind": "SET",
+      "instantUtc": "2050-06-21T06:53:54.670Z",
+      "azimuthDeg": 297.987185739,
+      "altitudeDeg": -0.828493426,
+      "rawFile": "event-sydney-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0,
+        "zone": "Australia/Sydney"
+      },
+      "target": "MOON",
+      "kind": "RISE",
+      "instantUtc": "2000-02-28T14:05:38.928Z",
+      "azimuthDeg": 114.374435083,
+      "altitudeDeg": -0.811585351,
+      "rawFile": "event-sydney-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0,
+        "zone": "Australia/Sydney"
+      },
+      "target": "MOON",
+      "kind": "SET",
+      "instantUtc": "2000-02-29T04:28:05.153Z",
+      "azimuthDeg": 244.857442618,
+      "altitudeDeg": -0.813993935,
+      "rawFile": "event-sydney-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0,
+        "zone": "Australia/Sydney"
+      },
+      "target": "MOON",
+      "kind": "SET",
+      "instantUtc": "2026-10-22T17:05:05.987Z",
+      "azimuthDeg": 264.717829688,
+      "altitudeDeg": -0.825242685,
+      "rawFile": "event-sydney-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0,
+        "zone": "Australia/Sydney"
+      },
+      "target": "MOON",
+      "kind": "RISE",
+      "instantUtc": "2026-10-23T05:12:16.434Z",
+      "azimuthDeg": 91.551142581,
+      "altitudeDeg": -0.82579886,
+      "rawFile": "event-sydney-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0,
+        "zone": "Australia/Sydney"
+      },
+      "target": "MOON",
+      "kind": "RISE",
+      "instantUtc": "2050-06-20T22:04:37.347Z",
+      "azimuthDeg": 68.235244172,
+      "altitudeDeg": -0.81622561,
+      "rawFile": "event-sydney-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0,
+        "zone": "Australia/Sydney"
+      },
+      "target": "MOON",
+      "kind": "SET",
+      "instantUtc": "2050-06-21T08:47:47.998Z",
+      "azimuthDeg": 290.448330216,
+      "altitudeDeg": -0.81996706,
+      "rawFile": "event-sydney-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "london",
+        "latitude": 51.5074,
+        "longitude": -0.1278,
+        "elevationMeters": 0,
+        "zone": "Europe/London"
+      },
+      "target": "SUN",
+      "kind": "RISE",
+      "instantUtc": "2000-02-29T06:47:20.265Z",
+      "azimuthDeg": 101.563389063,
+      "altitudeDeg": -0.834717286,
+      "rawFile": "event-london-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "london",
+        "latitude": 51.5074,
+        "longitude": -0.1278,
+        "elevationMeters": 0,
+        "zone": "Europe/London"
+      },
+      "target": "SUN",
+      "kind": "SET",
+      "instantUtc": "2000-02-29T17:39:29.740Z",
+      "azimuthDeg": 258.717877433,
+      "altitudeDeg": -0.836516613,
+      "rawFile": "event-london-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "london",
+        "latitude": 51.5074,
+        "longitude": -0.1278,
+        "elevationMeters": 0,
+        "zone": "Europe/London"
+      },
+      "target": "SUN",
+      "kind": "RISE",
+      "instantUtc": "2026-10-23T06:38:09.124Z",
+      "azimuthDeg": 107.462993161,
+      "altitudeDeg": -0.83473098,
+      "rawFile": "event-london-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "london",
+        "latitude": 51.5074,
+        "longitude": -0.1278,
+        "elevationMeters": 0,
+        "zone": "Europe/London"
+      },
+      "target": "SUN",
+      "kind": "SET",
+      "instantUtc": "2026-10-23T16:50:44.244Z",
+      "azimuthDeg": 252.290827794,
+      "altitudeDeg": -0.83428897,
+      "rawFile": "event-london-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "london",
+        "latitude": 51.5074,
+        "longitude": -0.1278,
+        "elevationMeters": 0,
+        "zone": "Europe/London"
+      },
+      "target": "SUN",
+      "kind": "RISE",
+      "instantUtc": "2050-06-21T03:43:17.041Z",
+      "azimuthDeg": 48.922374237,
+      "altitudeDeg": -0.829118536,
+      "rawFile": "event-london-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "london",
+        "latitude": 51.5074,
+        "longitude": -0.1278,
+        "elevationMeters": 0,
+        "zone": "Europe/London"
+      },
+      "target": "SUN",
+      "kind": "SET",
+      "instantUtc": "2050-06-21T20:21:33.392Z",
+      "azimuthDeg": 311.074021616,
+      "altitudeDeg": -0.828905559,
+      "rawFile": "event-london-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "london",
+        "latitude": 51.5074,
+        "longitude": -0.1278,
+        "elevationMeters": 0,
+        "zone": "Europe/London"
+      },
+      "target": "MOON",
+      "kind": "RISE",
+      "instantUtc": "2000-02-29T03:27:09.668Z",
+      "azimuthDeg": 124.693278099,
+      "altitudeDeg": -0.811900699,
+      "rawFile": "event-london-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "london",
+        "latitude": 51.5074,
+        "longitude": -0.1278,
+        "elevationMeters": 0,
+        "zone": "Europe/London"
+      },
+      "target": "MOON",
+      "kind": "SET",
+      "instantUtc": "2000-02-29T11:54:05.315Z",
+      "azimuthDeg": 234.899861233,
+      "altitudeDeg": -0.813702711,
+      "rawFile": "event-london-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "london",
+        "latitude": 51.5074,
+        "longitude": -0.1278,
+        "elevationMeters": 0,
+        "zone": "Europe/London"
+      },
+      "target": "MOON",
+      "kind": "SET",
+      "instantUtc": "2026-10-23T03:06:33.459Z",
+      "azimuthDeg": 266.799393707,
+      "altitudeDeg": -0.827553207,
+      "rawFile": "event-london-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "london",
+        "latitude": 51.5074,
+        "longitude": -0.1278,
+        "elevationMeters": 0,
+        "zone": "Europe/London"
+      },
+      "target": "MOON",
+      "kind": "RISE",
+      "instantUtc": "2026-10-23T15:33:26.772Z",
+      "azimuthDeg": 88.014370337,
+      "altitudeDeg": -0.828291546,
+      "rawFile": "event-london-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "london",
+        "latitude": 51.5074,
+        "longitude": -0.1278,
+        "elevationMeters": 0,
+        "zone": "Europe/London"
+      },
+      "target": "MOON",
+      "kind": "RISE",
+      "instantUtc": "2050-06-21T06:04:55.846Z",
+      "azimuthDeg": 61.968126404,
+      "altitudeDeg": -0.815013327,
+      "rawFile": "event-london-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "london",
+        "latitude": 51.5074,
+        "longitude": -0.1278,
+        "elevationMeters": 0,
+        "zone": "Europe/London"
+      },
+      "target": "MOON",
+      "kind": "SET",
+      "instantUtc": "2050-06-21T21:24:49.099Z",
+      "azimuthDeg": 295.076482704,
+      "altitudeDeg": -0.817052191,
+      "rawFile": "event-london-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "equator",
+        "latitude": 0,
+        "longitude": 0,
+        "elevationMeters": 0,
+        "zone": "UTC"
+      },
+      "target": "SUN",
+      "instantUtc": "2026-01-03T10:00:00Z",
+      "azimuthDeg": 129.12851438,
+      "altitudeDeg": 52.114457242,
+      "rawFile": "extra-equator-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "equator",
+        "latitude": 0,
+        "longitude": 0,
+        "elevationMeters": 0,
+        "zone": "UTC"
+      },
+      "target": "SUN",
+      "instantUtc": "2026-01-18T20:00:00Z",
+      "azimuthDeg": 247.263086675,
+      "altitudeDeg": -25.529901022,
+      "rawFile": "extra-equator-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "equator",
+        "latitude": 0,
+        "longitude": 0,
+        "elevationMeters": 0,
+        "zone": "UTC"
+      },
+      "target": "SUN",
+      "instantUtc": "2026-03-20T12:07:00Z",
+      "azimuthDeg": 111.858194492,
+      "altitudeDeg": 89.882980542,
+      "rawFile": "extra-equator-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "equator",
+        "latitude": 0,
+        "longitude": 0,
+        "elevationMeters": 0,
+        "zone": "UTC"
+      },
+      "target": "SUN",
+      "instantUtc": "2026-06-21T00:00:00Z",
+      "azimuthDeg": 359.015474508,
+      "altitudeDeg": -66.559767071,
+      "rawFile": "extra-equator-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "equator",
+        "latitude": 0,
+        "longitude": 0,
+        "elevationMeters": 0,
+        "zone": "UTC"
+      },
+      "target": "SUN",
+      "instantUtc": "2026-09-23T12:00:00Z",
+      "azimuthDeg": 264.215325929,
+      "altitudeDeg": 88.083357791,
+      "rawFile": "extra-equator-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "equator",
+        "latitude": 0,
+        "longitude": 0,
+        "elevationMeters": 0,
+        "zone": "UTC"
+      },
+      "target": "SUN",
+      "instantUtc": "2026-12-21T00:00:00Z",
+      "azimuthDeg": 178.741967647,
+      "altitudeDeg": -66.560526248,
+      "rawFile": "extra-equator-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "equator",
+        "latitude": 0,
+        "longitude": 0,
+        "elevationMeters": 0,
+        "zone": "UTC"
+      },
+      "target": "MOON",
+      "instantUtc": "2026-01-03T10:00:00Z",
+      "azimuthDeg": 314.321395796,
+      "altitudeDeg": -50.012182583,
+      "rawFile": "extra-equator-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "equator",
+        "latitude": 0,
+        "longitude": 0,
+        "elevationMeters": 0,
+        "zone": "UTC"
+      },
+      "target": "MOON",
+      "instantUtc": "2026-01-18T20:00:00Z",
+      "azimuthDeg": 243.872442778,
+      "altitudeDeg": -25.007084375,
+      "rawFile": "extra-equator-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "equator",
+        "latitude": 0,
+        "longitude": 0,
+        "elevationMeters": 0,
+        "zone": "UTC"
+      },
+      "target": "MOON",
+      "instantUtc": "2026-03-20T12:07:00Z",
+      "azimuthDeg": 56.593821957,
+      "altitudeDeg": 70.270240415,
+      "rawFile": "extra-equator-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "equator",
+        "latitude": 0,
+        "longitude": 0,
+        "elevationMeters": 0,
+        "zone": "UTC"
+      },
+      "target": "MOON",
+      "instantUtc": "2026-06-21T00:00:00Z",
+      "azimuthDeg": 273.165959426,
+      "altitudeDeg": -11.097936538,
+      "rawFile": "extra-equator-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "equator",
+        "latitude": 0,
+        "longitude": 0,
+        "elevationMeters": 0,
+        "zone": "UTC"
+      },
+      "target": "MOON",
+      "instantUtc": "2026-09-23T12:00:00Z",
+      "azimuthDeg": 113.400299556,
+      "altitudeDeg": -50.341967757,
+      "rawFile": "extra-equator-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "equator",
+        "latitude": 0,
+        "longitude": 0,
+        "elevationMeters": 0,
+        "zone": "UTC"
+      },
+      "target": "MOON",
+      "instantUtc": "2026-12-21T00:00:00Z",
+      "azimuthDeg": 298.252086408,
+      "altitudeDeg": 38.275566465,
+      "rawFile": "extra-equator-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "yiwu-height",
+        "latitude": 29.31506,
+        "longitude": 120.07676,
+        "elevationMeters": 500,
+        "eyeHeightMeters": 2,
+        "zone": "Asia/Shanghai"
+      },
+      "target": "SUN",
+      "instantUtc": "2026-01-03T10:00:00Z",
+      "azimuthDeg": 249.421765575,
+      "altitudeDeg": -10.092627674,
+      "rawFile": "extra-yiwu-height-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "yiwu-height",
+        "latitude": 29.31506,
+        "longitude": 120.07676,
+        "elevationMeters": 500,
+        "eyeHeightMeters": 2,
+        "zone": "Asia/Shanghai"
+      },
+      "target": "SUN",
+      "instantUtc": "2026-01-18T20:00:00Z",
+      "azimuthDeg": 94.143554107,
+      "altitudeDeg": -37.62126265,
+      "rawFile": "extra-yiwu-height-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "yiwu-height",
+        "latitude": 29.31506,
+        "longitude": 120.07676,
+        "elevationMeters": 500,
+        "eyeHeightMeters": 2,
+        "zone": "Asia/Shanghai"
+      },
+      "target": "SUN",
+      "instantUtc": "2026-03-20T12:07:00Z",
+      "azimuthDeg": 285.724608864,
+      "altitudeDeg": -25.846321689,
+      "rawFile": "extra-yiwu-height-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "yiwu-height",
+        "latitude": 29.31506,
+        "longitude": 120.07676,
+        "elevationMeters": 500,
+        "eyeHeightMeters": 2,
+        "zone": "Asia/Shanghai"
+      },
+      "target": "SUN",
+      "instantUtc": "2026-06-21T00:00:00Z",
+      "azimuthDeg": 81.119383971,
+      "altitudeDeg": 36.190565008,
+      "rawFile": "extra-yiwu-height-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "yiwu-height",
+        "latitude": 29.31506,
+        "longitude": 120.07676,
+        "elevationMeters": 500,
+        "eyeHeightMeters": 2,
+        "zone": "Asia/Shanghai"
+      },
+      "target": "SUN",
+      "instantUtc": "2026-09-23T12:00:00Z",
+      "azimuthDeg": 286.819257395,
+      "altitudeDeg": -27.615050246,
+      "rawFile": "extra-yiwu-height-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "yiwu-height",
+        "latitude": 29.31506,
+        "longitude": 120.07676,
+        "elevationMeters": 500,
+        "eyeHeightMeters": 2,
+        "zone": "Asia/Shanghai"
+      },
+      "target": "SUN",
+      "instantUtc": "2026-12-21T00:00:00Z",
+      "azimuthDeg": 126.092081293,
+      "altitudeDeg": 12.283412663,
+      "rawFile": "extra-yiwu-height-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "yiwu-height",
+        "latitude": 29.31506,
+        "longitude": 120.07676,
+        "elevationMeters": 500,
+        "eyeHeightMeters": 2,
+        "zone": "Asia/Shanghai"
+      },
+      "target": "MOON",
+      "instantUtc": "2026-01-03T10:00:00Z",
+      "azimuthDeg": 65.376532248,
+      "altitudeDeg": 10.711884158,
+      "rawFile": "extra-yiwu-height-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "yiwu-height",
+        "latitude": 29.31506,
+        "longitude": 120.07676,
+        "elevationMeters": 500,
+        "eyeHeightMeters": 2,
+        "zone": "Asia/Shanghai"
+      },
+      "target": "MOON",
+      "instantUtc": "2026-01-18T20:00:00Z",
+      "azimuthDeg": 97.720636848,
+      "altitudeDeg": -40.188434538,
+      "rawFile": "extra-yiwu-height-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "yiwu-height",
+        "latitude": 29.31506,
+        "longitude": 120.07676,
+        "elevationMeters": 500,
+        "eyeHeightMeters": 2,
+        "zone": "Asia/Shanghai"
+      },
+      "target": "MOON",
+      "instantUtc": "2026-03-20T12:07:00Z",
+      "azimuthDeg": 285.97637566,
+      "altitudeDeg": -7.497721638,
+      "rawFile": "extra-yiwu-height-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "yiwu-height",
+        "latitude": 29.31506,
+        "longitude": 120.07676,
+        "elevationMeters": 500,
+        "eyeHeightMeters": 2,
+        "zone": "Asia/Shanghai"
+      },
+      "target": "MOON",
+      "instantUtc": "2026-06-21T00:00:00Z",
+      "azimuthDeg": 56.90323136,
+      "altitudeDeg": -40.357486476,
+      "rawFile": "extra-yiwu-height-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "yiwu-height",
+        "latitude": 29.31506,
+        "longitude": 120.07676,
+        "elevationMeters": 500,
+        "eyeHeightMeters": 2,
+        "zone": "Asia/Shanghai"
+      },
+      "target": "MOON",
+      "instantUtc": "2026-09-23T12:00:00Z",
+      "azimuthDeg": 151.252134472,
+      "altitudeDeg": 40.235832053,
+      "rawFile": "extra-yiwu-height-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "yiwu-height",
+        "latitude": 29.31506,
+        "longitude": 120.07676,
+        "elevationMeters": 500,
+        "eyeHeightMeters": 2,
+        "zone": "Asia/Shanghai"
+      },
+      "target": "MOON",
+      "instantUtc": "2026-12-21T00:00:00Z",
+      "azimuthDeg": 345.175944737,
+      "altitudeDeg": -38.474630305,
+      "rawFile": "extra-yiwu-height-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "kiritimati",
+        "latitude": 1.8721,
+        "longitude": -157.4278,
+        "elevationMeters": 0,
+        "zone": "Pacific/Kiritimati"
+      },
+      "target": "SUN",
+      "instantUtc": "2026-01-03T10:00:00Z",
+      "azimuthDeg": 200.952897643,
+      "altitudeDeg": -67.491237627,
+      "rawFile": "extra-kiritimati-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "kiritimati",
+        "latitude": 1.8721,
+        "longitude": -157.4278,
+        "elevationMeters": 0,
+        "zone": "Pacific/Kiritimati"
+      },
+      "target": "SUN",
+      "instantUtc": "2026-01-18T20:00:00Z",
+      "azimuthDeg": 121.668793322,
+      "altitudeDeg": 44.877505235,
+      "rawFile": "extra-kiritimati-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "kiritimati",
+        "latitude": 1.8721,
+        "longitude": -157.4278,
+        "elevationMeters": 0,
+        "zone": "Pacific/Kiritimati"
+      },
+      "target": "SUN",
+      "instantUtc": "2026-03-20T12:07:00Z",
+      "azimuthDeg": 85.595709985,
+      "altitudeDeg": -67.46699901,
+      "rawFile": "extra-kiritimati-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "kiritimati",
+        "latitude": 1.8721,
+        "longitude": -157.4278,
+        "elevationMeters": 0,
+        "zone": "Pacific/Kiritimati"
+      },
+      "target": "SUN",
+      "instantUtc": "2026-06-21T00:00:00Z",
+      "azimuthDeg": 316.91450493,
+      "altitudeDeg": 59.580557024,
+      "rawFile": "extra-kiritimati-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "kiritimati",
+        "latitude": 1.8721,
+        "longitude": -157.4278,
+        "elevationMeters": 0,
+        "zone": "Pacific/Kiritimati"
+      },
+      "target": "SUN",
+      "instantUtc": "2026-09-23T12:00:00Z",
+      "azimuthDeg": 86.359582016,
+      "altitudeDeg": -65.469229885,
+      "rawFile": "extra-kiritimati-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "kiritimati",
+        "latitude": 1.8721,
+        "longitude": -157.4278,
+        "elevationMeters": 0,
+        "zone": "Pacific/Kiritimati"
+      },
+      "target": "SUN",
+      "instantUtc": "2026-12-21T00:00:00Z",
+      "azimuthDeg": 220.281088552,
+      "altitudeDeg": 56.138294831,
+      "rawFile": "extra-kiritimati-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "kiritimati",
+        "latitude": 1.8721,
+        "longitude": -157.4278,
+        "elevationMeters": 0,
+        "zone": "Pacific/Kiritimati"
+      },
+      "target": "MOON",
+      "instantUtc": "2026-01-03T10:00:00Z",
+      "azimuthDeg": 18.063247119,
+      "altitudeDeg": 62.917041746,
+      "rawFile": "extra-kiritimati-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "kiritimati",
+        "latitude": 1.8721,
+        "longitude": -157.4278,
+        "elevationMeters": 0,
+        "zone": "Pacific/Kiritimati"
+      },
+      "target": "MOON",
+      "instantUtc": "2026-01-18T20:00:00Z",
+      "azimuthDeg": 125.294252171,
+      "altitudeDeg": 42.078910847,
+      "rawFile": "extra-kiritimati-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "kiritimati",
+        "latitude": 1.8721,
+        "longitude": -157.4278,
+        "elevationMeters": 0,
+        "zone": "Pacific/Kiritimati"
+      },
+      "target": "MOON",
+      "instantUtc": "2026-03-20T12:07:00Z",
+      "azimuthDeg": 26.296434541,
+      "altitudeDeg": -76.378970792,
+      "rawFile": "extra-kiritimati-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "kiritimati",
+        "latitude": 1.8721,
+        "longitude": -157.4278,
+        "elevationMeters": 0,
+        "zone": "Pacific/Kiritimati"
+      },
+      "target": "MOON",
+      "instantUtc": "2026-06-21T00:00:00Z",
+      "azimuthDeg": 87.498397812,
+      "altitudeDeg": 31.986958597,
+      "rawFile": "extra-kiritimati-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "kiritimati",
+        "latitude": 1.8721,
+        "longitude": -157.4278,
+        "elevationMeters": 0,
+        "zone": "Pacific/Kiritimati"
+      },
+      "target": "MOON",
+      "instantUtc": "2026-09-23T12:00:00Z",
+      "azimuthDeg": 252.064260418,
+      "altitudeDeg": 27.110267858,
+      "rawFile": "extra-kiritimati-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "kiritimati",
+        "latitude": 1.8721,
+        "longitude": -157.4278,
+        "elevationMeters": 0,
+        "zone": "Pacific/Kiritimati"
+      },
+      "target": "MOON",
+      "instantUtc": "2026-12-21T00:00:00Z",
+      "azimuthDeg": 66.61021806,
+      "altitudeDeg": -18.826568523,
+      "rawFile": "extra-kiritimati-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "tromso",
+        "latitude": 69.6492,
+        "longitude": 18.9553,
+        "elevationMeters": 0,
+        "zone": "Europe/Oslo"
+      },
+      "target": "SUN",
+      "instantUtc": "2026-01-03T10:00:00Z",
+      "azimuthDeg": 168.791364383,
+      "altitudeDeg": -2.863924424,
+      "rawFile": "extra-tromso-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "tromso",
+        "latitude": 69.6492,
+        "longitude": 18.9553,
+        "elevationMeters": 0,
+        "zone": "Europe/Oslo"
+      },
+      "target": "SUN",
+      "instantUtc": "2026-01-18T20:00:00Z",
+      "azimuthDeg": 308.476242158,
+      "altitudeDeg": -34.248772095,
+      "rawFile": "extra-tromso-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "tromso",
+        "latitude": 69.6492,
+        "longitude": 18.9553,
+        "elevationMeters": 0,
+        "zone": "Europe/Oslo"
+      },
+      "target": "SUN",
+      "instantUtc": "2026-03-20T12:07:00Z",
+      "azimuthDeg": 199.999533739,
+      "altitudeDeg": 19.169884479,
+      "rawFile": "extra-tromso-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "tromso",
+        "latitude": 69.6492,
+        "longitude": 18.9553,
+        "elevationMeters": 0,
+        "zone": "Europe/Oslo"
+      },
+      "target": "SUN",
+      "instantUtc": "2026-06-21T00:00:00Z",
+      "azimuthDeg": 16.99486536,
+      "altitudeDeg": 4.03380602,
+      "rawFile": "extra-tromso-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "tromso",
+        "latitude": 69.6492,
+        "longitude": 18.9553,
+        "elevationMeters": 0,
+        "zone": "Europe/Oslo"
+      },
+      "target": "SUN",
+      "instantUtc": "2026-09-23T12:00:00Z",
+      "azimuthDeg": 202.094255603,
+      "altitudeDeg": 18.769794653,
+      "rawFile": "extra-tromso-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "tromso",
+        "latitude": 69.6492,
+        "longitude": 18.9553,
+        "elevationMeters": 0,
+        "zone": "Europe/Oslo"
+      },
+      "target": "SUN",
+      "instantUtc": "2026-12-21T00:00:00Z",
+      "azimuthDeg": 24.48367704,
+      "altitudeDeg": -42.351532224,
+      "rawFile": "extra-tromso-sun-raw.json"
+    },
+    {
+      "site": {
+        "id": "tromso",
+        "latitude": 69.6492,
+        "longitude": 18.9553,
+        "elevationMeters": 0,
+        "zone": "Europe/Oslo"
+      },
+      "target": "MOON",
+      "instantUtc": "2026-01-03T10:00:00Z",
+      "azimuthDeg": 348.716277034,
+      "altitudeDeg": 6.145115672,
+      "rawFile": "extra-tromso-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "tromso",
+        "latitude": 69.6492,
+        "longitude": 18.9553,
+        "elevationMeters": 0,
+        "zone": "Europe/Oslo"
+      },
+      "target": "MOON",
+      "instantUtc": "2026-01-18T20:00:00Z",
+      "azimuthDeg": 306.38537847,
+      "altitudeDeg": -37.875580775,
+      "rawFile": "extra-tromso-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "tromso",
+        "latitude": 69.6492,
+        "longitude": 18.9553,
+        "elevationMeters": 0,
+        "zone": "Europe/Oslo"
+      },
+      "target": "MOON",
+      "instantUtc": "2026-03-20T12:07:00Z",
+      "azimuthDeg": 182.952592263,
+      "altitudeDeg": 30.008707211,
+      "rawFile": "extra-tromso-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "tromso",
+        "latitude": 69.6492,
+        "longitude": 18.9553,
+        "elevationMeters": 0,
+        "zone": "Europe/Oslo"
+      },
+      "target": "MOON",
+      "instantUtc": "2026-06-21T00:00:00Z",
+      "azimuthDeg": 298.558061852,
+      "altitudeDeg": -7.72398939,
+      "rawFile": "extra-tromso-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "tromso",
+        "latitude": 69.6492,
+        "longitude": 18.9553,
+        "elevationMeters": 0,
+        "zone": "Europe/Oslo"
+      },
+      "target": "MOON",
+      "instantUtc": "2026-09-23T12:00:00Z",
+      "azimuthDeg": 63.288214265,
+      "altitudeDeg": -25.960149204,
+      "rawFile": "extra-tromso-moon-raw.json"
+    },
+    {
+      "site": {
+        "id": "tromso",
+        "latitude": 69.6492,
+        "longitude": 18.9553,
+        "elevationMeters": 0,
+        "zone": "Europe/Oslo"
+      },
+      "target": "MOON",
+      "instantUtc": "2026-12-21T00:00:00Z",
+      "azimuthDeg": 255.354798115,
+      "altitudeDeg": 27.452232673,
+      "rawFile": "extra-tromso-moon-raw.json"
+    }
+  ]
+}

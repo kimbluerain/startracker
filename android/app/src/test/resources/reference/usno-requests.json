@@ -1,0 +1,101 @@
+[
+  {
+    "id": "usno-hangzhou-2000-02-29-raw.json",
+    "method": "GET",
+    "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2000-02-29&coords=30.2741%2C120.1551&tz=8.0&dst=false",
+    "parameters": {
+      "date": "2000-02-29",
+      "coords": "30.2741,120.1551",
+      "tz": 8.0,
+      "dst": "false"
+    }
+  },
+  {
+    "id": "usno-hangzhou-2026-10-23-raw.json",
+    "method": "GET",
+    "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-10-23&coords=30.2741%2C120.1551&tz=8.0&dst=false",
+    "parameters": {
+      "date": "2026-10-23",
+      "coords": "30.2741,120.1551",
+      "tz": 8.0,
+      "dst": "false"
+    }
+  },
+  {
+    "id": "usno-hangzhou-2050-06-21-raw.json",
+    "method": "GET",
+    "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2050-06-21&coords=30.2741%2C120.1551&tz=8.0&dst=false",
+    "parameters": {
+      "date": "2050-06-21",
+      "coords": "30.2741,120.1551",
+      "tz": 8.0,
+      "dst": "false"
+    }
+  },
+  {
+    "id": "usno-sydney-2000-02-29-raw.json",
+    "method": "GET",
+    "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2000-02-29&coords=-33.8688%2C151.2093&tz=11.0&dst=false",
+    "parameters": {
+      "date": "2000-02-29",
+      "coords": "-33.8688,151.2093",
+      "tz": 11.0,
+      "dst": "false"
+    }
+  },
+  {
+    "id": "usno-sydney-2026-10-23-raw.json",
+    "method": "GET",
+    "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-10-23&coords=-33.8688%2C151.2093&tz=11.0&dst=false",
+    "parameters": {
+      "date": "2026-10-23",
+      "coords": "-33.8688,151.2093",
+      "tz": 11.0,
+      "dst": "false"
+    }
+  },
+  {
+    "id": "usno-sydney-2050-06-21-raw.json",
+    "method": "GET",
+    "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2050-06-21&coords=-33.8688%2C151.2093&tz=10.0&dst=false",
+    "parameters": {
+      "date": "2050-06-21",
+      "coords": "-33.8688,151.2093",
+      "tz": 10.0,
+      "dst": "false"
+    }
+  },
+  {
+    "id": "usno-london-2000-02-29-raw.json",
+    "method": "GET",
+    "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2000-02-29&coords=51.5074%2C-0.1278&tz=0.0&dst=false",
+    "parameters": {
+      "date": "2000-02-29",
+      "coords": "51.5074,-0.1278",
+      "tz": 0.0,
+      "dst": "false"
+    }
+  },
+  {
+    "id": "usno-london-2026-10-23-raw.json",
+    "method": "GET",
+    "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-10-23&coords=51.5074%2C-0.1278&tz=1.0&dst=false",
+    "parameters": {
+      "date": "2026-10-23",
+      "coords": "51.5074,-0.1278",
+      "tz": 1.0,
+      "dst": "false"
+    }
+  },
+  {
+    "id": "usno-london-2050-06-21-raw.json",
+    "method": "GET",
+    "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2050-06-21&coords=51.5074%2C-0.1278&tz=1.0&dst=false",
+    "parameters": {
+      "date": "2050-06-21",
+      "coords": "51.5074,-0.1278",
+      "tz": 1.0,
+      "dst": "false"
+    }
+  }
+]

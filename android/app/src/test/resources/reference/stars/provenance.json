@@ -1,0 +1,29 @@
+{
+  "sourceUrl": "https://raw.githubusercontent.com/astronexus/HYG-Database/c7f7f883fe678cc7680169a50ccd7dcc49b060ce/hyg/CURRENT/hygdata_v41.csv",
+  "sourceCommit": "c7f7f883fe678cc7680169a50ccd7dcc49b060ce",
+  "sourceAuthor": "David Nash / Astronexus",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes": "Selected exactly 25 HIP rows; copied all CSV fields to subset, original source row values unchanged; subset CSV reserialized; normalized JSON ra hours to degrees and proper motion field naming clarified.",
+  "sourceRead": "Stream stopped after all 25 HIPs collected; full upstream SHA256 not calculated",
+  "rows": 25,
+  "units": {
+    "ra": "hours; multiply by 15 for degrees",
+    "dec": "degrees",
+    "pmra": "mu_alpha*cos(delta), milliarcseconds per year",
+    "pmdec": "milliarcseconds per year",
+    "mag": "visual apparent magnitude"
+  },
+  "hashes": {
+    "proper-motion-convention-check.json": "de1ecd6e508638d9a55d54ff7bd2a3ebd6dd437be8740947149e5ee1b45397ee",
+    "CC-BY-SA-4.0-legalcode.txt": "cde7883b9050a1104f4ac19a1572aafd6e5d7323b68351aaf51fbf4beba54966",
+    "HYG-UPSTREAM-LICENSE.txt": "f404190403d31e0ce7223f4cb7af954485ad88077358330754dc5c892a856627",
+    "HYG-README.md": "81f765951e60131e49ccc91376815791e130ad1db46047eb1384d3ba6bcb5af4",
+    "stars-normalized.json": "930a791c830f0bd3dec6ccdeb049baa9abc354a2fec5b90a6f4e45c5b8fc8091",
+    "generate-stars-altaz.py": "aa950a8675db70219b81dfc13ed4753879388b8236e0af4ea2944bfde23f0729",
+    "hyg-v41-25stars-raw.csv": "6bc120de3163dca15d2cf49cf78bae688261cfa31ff05035800705dabd0a76ec"
+  },
+  "licenseTextMirror": "https://raw.githubusercontent.com/spdx/license-list-data/main/text/CC-BY-SA-4.0.txt",
+  "licenseFetchNote": "Official creativecommons.org legalcode.txt returned HTTP 403, so full legal text retained from SPDX license-list-data; primary HYG upstream LICENSE already specifies CC BY-SA 4.0.",
+  "properMotionEvidence": "proper-motion-convention-check.json"
+}

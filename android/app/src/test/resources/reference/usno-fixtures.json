@@ -1,0 +1,353 @@
+{
+  "metadata": {
+    "source": "USNO API v4.0.1",
+    "retrievedUtc": "2026-10-23T03:10:12.744290+00:00",
+    "timeScale": "UT1 plus explicit offset, minute precision; nominalInstantUtc treats UT1 as UTC and is only appropriate at minute tolerance",
+    "observer": "sea level, level unobstructed horizon, upper limb, 34 arcminute standard refraction",
+    "dst": "false; tz explicitly includes selected date local UTC offset"
+  },
+  "fixtures": [
+    {
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0,
+        "zone": "Asia/Shanghai"
+      },
+      "localDate": "2000-02-29",
+      "utcOffsetHours": 8.0,
+      "events": [
+        {
+          "target": "SUN",
+          "kind": "RISE",
+          "localTime": "06:27",
+          "nominalInstantUtc": "2000-02-28T22:27:00Z"
+        },
+        {
+          "target": "SUN",
+          "kind": "SET",
+          "localTime": "17:57",
+          "nominalInstantUtc": "2000-02-29T09:57:00Z"
+        },
+        {
+          "target": "MOON",
+          "kind": "RISE",
+          "localTime": "02:04",
+          "nominalInstantUtc": "2000-02-28T18:04:00Z"
+        },
+        {
+          "target": "MOON",
+          "kind": "SET",
+          "localTime": "12:43",
+          "nominalInstantUtc": "2000-02-29T04:43:00Z"
+        }
+      ],
+      "rawFile": "usno-hangzhou-2000-02-29-raw.json"
+    },
+    {
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0,
+        "zone": "Asia/Shanghai"
+      },
+      "localDate": "2026-10-23",
+      "utcOffsetHours": 8.0,
+      "events": [
+        {
+          "target": "SUN",
+          "kind": "RISE",
+          "localTime": "06:07",
+          "nominalInstantUtc": "2026-10-22T22:07:00Z"
+        },
+        {
+          "target": "SUN",
+          "kind": "SET",
+          "localTime": "17:20",
+          "nominalInstantUtc": "2026-10-23T09:20:00Z"
+        },
+        {
+          "target": "MOON",
+          "kind": "SET",
+          "localTime": "02:51",
+          "nominalInstantUtc": "2026-10-22T18:51:00Z"
+        },
+        {
+          "target": "MOON",
+          "kind": "RISE",
+          "localTime": "15:26",
+          "nominalInstantUtc": "2026-10-23T07:26:00Z"
+        }
+      ],
+      "rawFile": "usno-hangzhou-2026-10-23-raw.json"
+    },
+    {
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0,
+        "zone": "Asia/Shanghai"
+      },
+      "localDate": "2050-06-21",
+      "utcOffsetHours": 8.0,
+      "events": [
+        {
+          "target": "SUN",
+          "kind": "RISE",
+          "localTime": "04:58",
+          "nominalInstantUtc": "2050-06-20T20:58:00Z"
+        },
+        {
+          "target": "SUN",
+          "kind": "SET",
+          "localTime": "19:04",
+          "nominalInstantUtc": "2050-06-21T11:04:00Z"
+        },
+        {
+          "target": "MOON",
+          "kind": "RISE",
+          "localTime": "06:37",
+          "nominalInstantUtc": "2050-06-20T22:37:00Z"
+        },
+        {
+          "target": "MOON",
+          "kind": "SET",
+          "localTime": "20:25",
+          "nominalInstantUtc": "2050-06-21T12:25:00Z"
+        }
+      ],
+      "rawFile": "usno-hangzhou-2050-06-21-raw.json"
+    },
+    {
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0,
+        "zone": "Australia/Sydney"
+      },
+      "localDate": "2000-02-29",
+      "utcOffsetHours": 11.0,
+      "events": [
+        {
+          "target": "SUN",
+          "kind": "RISE",
+          "localTime": "06:42",
+          "nominalInstantUtc": "2000-02-28T19:42:00Z"
+        },
+        {
+          "target": "SUN",
+          "kind": "SET",
+          "localTime": "19:33",
+          "nominalInstantUtc": "2000-02-29T08:33:00Z"
+        },
+        {
+          "target": "MOON",
+          "kind": "RISE",
+          "localTime": "01:06",
+          "nominalInstantUtc": "2000-02-28T14:06:00Z"
+        },
+        {
+          "target": "MOON",
+          "kind": "SET",
+          "localTime": "15:28",
+          "nominalInstantUtc": "2000-02-29T04:28:00Z"
+        }
+      ],
+      "rawFile": "usno-sydney-2000-02-29-raw.json"
+    },
+    {
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0,
+        "zone": "Australia/Sydney"
+      },
+      "localDate": "2026-10-23",
+      "utcOffsetHours": 11.0,
+      "events": [
+        {
+          "target": "SUN",
+          "kind": "RISE",
+          "localTime": "06:05",
+          "nominalInstantUtc": "2026-10-22T19:05:00Z"
+        },
+        {
+          "target": "SUN",
+          "kind": "SET",
+          "localTime": "19:15",
+          "nominalInstantUtc": "2026-10-23T08:15:00Z"
+        },
+        {
+          "target": "MOON",
+          "kind": "SET",
+          "localTime": "04:05",
+          "nominalInstantUtc": "2026-10-22T17:05:00Z"
+        },
+        {
+          "target": "MOON",
+          "kind": "RISE",
+          "localTime": "16:12",
+          "nominalInstantUtc": "2026-10-23T05:12:00Z"
+        }
+      ],
+      "rawFile": "usno-sydney-2026-10-23-raw.json"
+    },
+    {
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0,
+        "zone": "Australia/Sydney"
+      },
+      "localDate": "2050-06-21",
+      "utcOffsetHours": 10.0,
+      "events": [
+        {
+          "target": "SUN",
+          "kind": "RISE",
+          "localTime": "07:00",
+          "nominalInstantUtc": "2050-06-20T21:00:00Z"
+        },
+        {
+          "target": "SUN",
+          "kind": "SET",
+          "localTime": "16:54",
+          "nominalInstantUtc": "2050-06-21T06:54:00Z"
+        },
+        {
+          "target": "MOON",
+          "kind": "RISE",
+          "localTime": "08:05",
+          "nominalInstantUtc": "2050-06-20T22:05:00Z"
+        },
+        {
+          "target": "MOON",
+          "kind": "SET",
+          "localTime": "18:48",
+          "nominalInstantUtc": "2050-06-21T08:48:00Z"
+        }
+      ],
+      "rawFile": "usno-sydney-2050-06-21-raw.json"
+    },
+    {
+      "site": {
+        "id": "london",
+        "latitude": 51.5074,
+        "longitude": -0.1278,
+        "elevationMeters": 0,
+        "zone": "Europe/London"
+      },
+      "localDate": "2000-02-29",
+      "utcOffsetHours": 0.0,
+      "events": [
+        {
+          "target": "SUN",
+          "kind": "RISE",
+          "localTime": "06:47",
+          "nominalInstantUtc": "2000-02-29T06:47:00Z"
+        },
+        {
+          "target": "SUN",
+          "kind": "SET",
+          "localTime": "17:40",
+          "nominalInstantUtc": "2000-02-29T17:40:00Z"
+        },
+        {
+          "target": "MOON",
+          "kind": "RISE",
+          "localTime": "03:27",
+          "nominalInstantUtc": "2000-02-29T03:27:00Z"
+        },
+        {
+          "target": "MOON",
+          "kind": "SET",
+          "localTime": "11:54",
+          "nominalInstantUtc": "2000-02-29T11:54:00Z"
+        }
+      ],
+      "rawFile": "usno-london-2000-02-29-raw.json"
+    },
+    {
+      "site": {
+        "id": "london",
+        "latitude": 51.5074,
+        "longitude": -0.1278,
+        "elevationMeters": 0,
+        "zone": "Europe/London"
+      },
+      "localDate": "2026-10-23",
+      "utcOffsetHours": 1.0,
+      "events": [
+        {
+          "target": "SUN",
+          "kind": "RISE",
+          "localTime": "07:38",
+          "nominalInstantUtc": "2026-10-23T06:38:00Z"
+        },
+        {
+          "target": "SUN",
+          "kind": "SET",
+          "localTime": "17:51",
+          "nominalInstantUtc": "2026-10-23T16:51:00Z"
+        },
+        {
+          "target": "MOON",
+          "kind": "SET",
+          "localTime": "04:07",
+          "nominalInstantUtc": "2026-10-23T03:07:00Z"
+        },
+        {
+          "target": "MOON",
+          "kind": "RISE",
+          "localTime": "16:33",
+          "nominalInstantUtc": "2026-10-23T15:33:00Z"
+        }
+      ],
+      "rawFile": "usno-london-2026-10-23-raw.json"
+    },
+    {
+      "site": {
+        "id": "london",
+        "latitude": 51.5074,
+        "longitude": -0.1278,
+        "elevationMeters": 0,
+        "zone": "Europe/London"
+      },
+      "localDate": "2050-06-21",
+      "utcOffsetHours": 1.0,
+      "events": [
+        {
+          "target": "SUN",
+          "kind": "RISE",
+          "localTime": "04:43",
+          "nominalInstantUtc": "2050-06-21T03:43:00Z"
+        },
+        {
+          "target": "SUN",
+          "kind": "SET",
+          "localTime": "21:22",
+          "nominalInstantUtc": "2050-06-21T20:22:00Z"
+        },
+        {
+          "target": "MOON",
+          "kind": "RISE",
+          "localTime": "07:05",
+          "nominalInstantUtc": "2050-06-21T06:05:00Z"
+        },
+        {
+          "target": "MOON",
+          "kind": "SET",
+          "localTime": "22:25",
+          "nominalInstantUtc": "2050-06-21T21:25:00Z"
+        }
+      ],
+      "rawFile": "usno-london-2050-06-21-raw.json"
+    }
+  ]
+}

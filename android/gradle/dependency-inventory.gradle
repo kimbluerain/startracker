@@ -1,0 +1,72 @@
+import groovy.json.JsonOutput
+import java.security.MessageDigest
+import org.gradle.api.artifacts.component.ModuleComponentIdentifier
+import org.gradle.api.file.DirectoryProperty
+import org.gradle.api.provider.ProviderFactory
+import javax.inject.Inject
+
+// Deliberately exports only the shipping runtime. Build/test inputs are tracked
+// separately by Gradle's lockfiles and dependency verification metadata.
+tasks.register('exportPrivatePreviewDependencies') {
+    def output = layout.buildDirectory.file('reports/dependencies/private-preview-resolved.json')
+    outputs.file(output)
+    outputs.upToDateWhen { false }
+    doLast {
+        def configuration = configurations.getByName('privatePreviewRuntimeClasspath')
+        def artifacts = configuration.incoming.artifacts.artifacts.collect { artifact ->
+            def component = artifact.id.componentIdentifier
+            if (!(component instanceof ModuleComponentIdentifier)) return null
+            [coordinate: "${component.group}:${component.module}:${component.version}".toString(),
+             file: artifact.file.absolutePath, filename: artifact.file.name,
+             sha256: MessageDigest.getInstance('SHA-256').digest(artifact.file.bytes).encodeHex().toString()]
+        }.findAll { it != null }
+            .unique { artifact -> [artifact.coordinate, artifact.filename, artifact.sha256] }
+            .sort { a, b -> a.coordinate <=> b.coordinate ?: a.filename <=> b.filename }
+        def components = configuration.incoming.resolutionResult.allComponents.collect { component ->
+            component.id.displayName
+        }.sort()
+        def result = [configuration: configuration.name, components: components, artifacts: artifacts]
+        def file = output.get().asFile
+        file.parentFile.mkdirs()
+        file.text = JsonOutput.prettyPrint(JsonOutput.toJson(result)) + '\n'
+        logger.lifecycle("Exported ${artifacts.size()} external runtime artifacts to ${file}")
+    }
+}
+
+tasks.register('verifyOfflineLicenses', Exec) {
+    dependsOn 'exportPrivatePreviewDependencies'
+    workingDir rootProject.projectDir.parentFile
+    commandLine 'python3', 'scripts/export-dependency-licenses.py', '--check'
+}
+tasks.named('preBuild').configure { dependsOn 'verifyOfflineLicenses' }
+
+// AGP only searches its Android root for VCS here; the actual Git root is one
+// directory above it. Put explicit source identity into both main APK variants.
+abstract class SkyTrailsSourceIdentity extends DefaultTask {
+    @OutputDirectory abstract DirectoryProperty getOutputDirectory()
+    @Internal abstract DirectoryProperty getRepositoryDirectory()
+    @Inject abstract ProviderFactory getProviderFactory()
+
+    @TaskAction void generate() {
+        def gitOutput = { List<String> arguments ->
+            providerFactory.exec {
+                workingDir repositoryDirectory.get().asFile
+                commandLine(['git'] + arguments)
+            }.standardOutput.asText.get().trim()
+        }
+        def identity = [sourceCommit: gitOutput(['rev-parse', 'HEAD']),
+                        androidTree: gitOutput(['rev-parse', 'HEAD:android']),
+                        dirtyProductionInputs: !gitOutput(['status', '--porcelain', '--', 'android', 'scripts', 'LICENSE', 'NOTICE']).isEmpty()]
+        def output = new File(outputDirectory.get().asFile, 'source-identity.json')
+        output.parentFile.mkdirs()
+        output.text = JsonOutput.prettyPrint(JsonOutput.toJson(identity)) + '\n'
+    }
+}
+def sourceIdentityTask = tasks.register('writeSourceIdentity', SkyTrailsSourceIdentity) {
+    outputDirectory.set(layout.buildDirectory.dir('generated/skyTrailsSourceIdentity'))
+    repositoryDirectory.set(rootProject.projectDir.parentFile)
+    outputs.upToDateWhen { false }
+}
+androidComponents.onVariants(androidComponents.selector().all()) { variant ->
+    variant.sources.assets.addGeneratedSourceDirectory(sourceIdentityTask) { it.outputDirectory }
+}

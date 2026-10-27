@@ -1,0 +1,21 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "Heliodos"
+include ':app'
+include ':colorpicker'
+project(':colorpicker').projectDir = new File(rootDir, 'colorpicker-android')
+include ':astronomy-jvm'

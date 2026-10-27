@@ -1,0 +1,96 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.plugin.compose'
+}
+
+android {
+    namespace = 'eu.domob.heliodos'
+    compileSdk {
+        version = release(37) {
+            minorApiLevel = 2
+        }
+    }
+    buildToolsVersion = '36.0.0'
+
+    buildFeatures {
+        buildConfig = true
+        compose = true
+    }
+
+    defaultConfig {
+        applicationId = "local.skytrails.app"
+        minSdk = 30
+        targetSdk = 37
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        versionCode = 15
+        versionName = "0.10.1-preview"
+    }
+
+    def keystorePath = System.getenv("KEYSTORE_PATH")
+    if (keystorePath) {
+        signingConfigs {
+            release {
+              storeFile = file(System.getenv("KEYSTORE_PATH"))
+              storePassword = System.getenv("KEYSTORE_PASSWORD")
+              keyAlias = "heliodos"
+              keyPassword = System.getenv("KEYSTORE_PASSWORD")
+            }
+        }
+    }
+
+    dependenciesInfo {
+        includeInApk = false
+        includeInBundle = false
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled = false
+            if (keystorePath) {
+                signingConfig = signingConfigs.release
+            }
+        }
+        privatePreview {
+            initWith release
+            debuggable = false
+            // Preserve covering updates with the existing SDK certificate. This is
+            // an experimental private build, not production-security signing.
+            signingConfig = signingConfigs.debug
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
+    }
+}
+
+apply from: rootProject.file('gradle/dependency-inventory.gradle')
+
+androidComponents {
+    beforeVariants(selector().withBuildType('privatePreview')) { variant ->
+        variant.enableUnitTest = true
+    }
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.18.0'
+    implementation project(':astronomy-jvm')
+    implementation 'androidx.datastore:datastore-preferences:1.1.1'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0'
+    implementation platform('androidx.compose:compose-bom:2026.09.00')
+    implementation 'androidx.compose.ui:ui'
+    implementation 'androidx.compose.foundation:foundation'
+    implementation 'androidx.compose.material3:material3'
+    implementation 'androidx.activity:activity-compose:1.13.0'
+    implementation 'androidx.lifecycle:lifecycle-runtime-compose:2.11.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-compose:2.11.0'
+    androidTestImplementation platform('androidx.compose:compose-bom:2026.09.00')
+    androidTestImplementation 'androidx.compose.ui:ui-test-junit4'
+    androidTestImplementation 'androidx.test.ext:junit:1.3.0'
+    androidTestImplementation 'androidx.test:runner:1.7.0'
+    debugImplementation 'androidx.compose.ui:ui-test-manifest'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'com.google.code.gson:gson:2.11.0'
+    testImplementation 'org.jetbrains.kotlinx:kotlinx-coroutines-test:1.9.0'
+}

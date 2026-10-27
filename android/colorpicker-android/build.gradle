@@ -1,0 +1,29 @@
+// App-owned build adapter; upstream Java, resources and license stay intact.
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    namespace = 'com.rarepebble.colorpicker'
+    compileSdk {
+        version = release(37) {
+            minorApiLevel = 2
+        }
+    }
+    buildToolsVersion = '36.0.0'
+    defaultConfig {
+        minSdk = 30
+    }
+    sourceSets {
+        main {
+            manifest.srcFile '../colorpicker/colorpicker/src/main/AndroidManifest.xml'
+            java.srcDirs = ['../colorpicker/colorpicker/src/main/java']
+            res.srcDirs = ['../colorpicker/colorpicker/src/main/res']
+        }
+    }
+}
+
+dependencies {
+    api 'androidx.appcompat:appcompat:1.6.1'
+    api 'androidx.preference:preference:1.2.0'
+}

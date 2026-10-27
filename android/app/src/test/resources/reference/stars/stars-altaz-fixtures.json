@@ -1,0 +1,5490 @@
+{
+  "metadata": {
+    "generatedUtc": "2026-10-26T01:18:11.750466+00:00",
+    "versions": {
+      "astropy": "7.2.0",
+      "pyerfa": "2.0.1.5",
+      "astropy-iers-data": "0.2026.10.19.0.52.1",
+      "numpy": "2.5.4",
+      "packaging": "26.3",
+      "PyYAML": "6.0.3"
+    },
+    "erfaVersion": "2.0.1",
+    "sofaVersion": "20231011",
+    "source": "Astropy SkyCoord.apply_space_motion / ICRS -> AltAz with ERFA; no production code or Astronomy Engine used",
+    "inputSha256": "6bc120de3163dca15d2cf49cf78bae688261cfa31ff05035800705dabd0a76ec",
+    "sourceEpoch": "J2000.0 TT",
+    "properMotion": "pm_ra_cosdec and pm_dec, milliarcseconds per Julian year",
+    "pressureHpa": 0,
+    "refraction": "disabled",
+    "distance": "Unit-spherical input; no physical distance, radial velocity, or finite-distance parallax. ERFA pmsafe may override a missing distance internally; those warnings are retained. This is an angular-proper-motion reference, not full physical space motion.",
+    "sites": "Synthetic WGS84 ellipsoid height 0m",
+    "iers": {
+      "tableFile": "iers-finals2000A-2026-10-19.all",
+      "sha256": "0baf00f67a39ab362a3e4f07d2a1f084842178523f56bcf5a861e7ac084d411a",
+      "sourceUrl": "https://datacenter.iers.org/data/9/finals2000A.all",
+      "autoDownload": false,
+      "statusMeaning": {
+        "0": "measured IERS B",
+        "1": "measured IERS A",
+        "2": "predicted IERS A",
+        "-1": "before table",
+        "-2": "beyond table"
+      },
+      "futurePolicy": "2050 outside table clips UT1-UTC to boundary; polar motion uses Astropy 50-year mean 0.035,0.29 arcsec; latest known leap seconds. Frozen model fixtures, not actual future UTC truth."
+    },
+    "suggestedAcceptance": "Spherical angular separation of ENU <=0.05 degrees; do not compare azimuth alone near zenith."
+  },
+  "fixtures": [
+    {
+      "hip": 746,
+      "proper": "Caph",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 2.293305,
+      "sourceDecDeg": 59.14978,
+      "pmRaCosDecMasYr": 523.39,
+      "pmDecMasYr": -180.42,
+      "propagatedIcrsRaDeg": 2.2933507979274297,
+      "propagatedIcrsDecDeg": 59.14977190438465,
+      "azimuthDeg": 326.5282784683173,
+      "altitudeDeg": 22.507875991751433,
+      "enu": [
+        -0.509513966675714,
+        0.770617735775472,
+        0.3828104270662752
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 3179,
+      "proper": "Schedar",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 10.126740000000002,
+      "sourceDecDeg": 56.537331,
+      "pmRaCosDecMasYr": 50.36,
+      "pmDecMasYr": -32.17,
+      "propagatedIcrsRaDeg": 10.126744098158747,
+      "propagatedIcrsDecDeg": 56.53732955650316,
+      "azimuthDeg": 322.3274438518974,
+      "altitudeDeg": 25.582605375978492,
+      "enu": [
+        -0.5512332756914773,
+        0.7139189909191451,
+        0.4318119384355109
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 4427,
+      "proper": "Cih",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 14.177145,
+      "sourceDecDeg": 60.71674,
+      "pmRaCosDecMasYr": 25.65,
+      "pmDecMasYr": -3.82,
+      "propagatedIcrsRaDeg": 14.177147353043287,
+      "propagatedIcrsDecDeg": 60.71673982859315,
+      "azimuthDeg": 326.2970316735409,
+      "altitudeDeg": 28.65180080479223,
+      "enu": [
+        -0.4869414578827563,
+        0.7300559756889825,
+        0.47948544186015046
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 6686,
+      "proper": "Ruchbah",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 21.453239999999997,
+      "sourceDecDeg": 60.235283,
+      "pmRaCosDecMasYr": 297.24,
+      "pmDecMasYr": -49.49,
+      "propagatedIcrsRaDeg": 21.45326686616356,
+      "propagatedIcrsDecDeg": 60.235280779336584,
+      "azimuthDeg": 325.11994916761915,
+      "altitudeDeg": 32.12248302362218,
+      "enu": [
+        -0.4843160957350944,
+        0.6947662301245575,
+        0.5317309516009251
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 8886,
+      "proper": "Segin",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 28.598760000000002,
+      "sourceDecDeg": 63.670101,
+      "pmRaCosDecMasYr": 31.98,
+      "pmDecMasYr": -18.66,
+      "propagatedIcrsRaDeg": 28.59876323527677,
+      "propagatedIcrsDecDeg": 63.67010016270902,
+      "azimuthDeg": 329.13884928384965,
+      "altitudeDeg": 35.57320189563036,
+      "enu": [
+        -0.4172272341365178,
+        0.6982098354738687,
+        0.5817426069511709
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 24436,
+      "proper": "Rigel",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 78.63447,
+      "sourceDecDeg": -8.20164,
+      "pmRaCosDecMasYr": 1.87,
+      "pmDecMasYr": -0.56,
+      "propagatedIcrsRaDeg": 78.63447008477564,
+      "propagatedIcrsDecDeg": -8.201640025127704,
+      "azimuthDeg": 209.92882245135698,
+      "altitudeDeg": 46.93665208233601,
+      "enu": [
+        -0.3406684152333945,
+        -0.5917514806419943,
+        0.730599217095375
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 25336,
+      "proper": "Bellatrix",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 81.282765,
+      "sourceDecDeg": 6.349702,
+      "pmRaCosDecMasYr": -8.75,
+      "pmDecMasYr": -13.28,
+      "propagatedIcrsRaDeg": 81.28276460495621,
+      "propagatedIcrsDecDeg": 6.349701404114485,
+      "azimuthDeg": 217.98272996256892,
+      "altitudeDeg": 60.97491413754613,
+      "enu": [
+        -0.2985990789057638,
+        -0.382426935705766,
+        0.8744073586854856
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 25930,
+      "proper": "Mintaka",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 83.001675,
+      "sourceDecDeg": -0.299092,
+      "pmRaCosDecMasYr": 1.67,
+      "pmDecMasYr": 0.56,
+      "propagatedIcrsRaDeg": 83.00167507493543,
+      "propagatedIcrsDecDeg": -0.2990919748722976,
+      "azimuthDeg": 209.02042803034982,
+      "altitudeDeg": 55.94136320886284,
+      "enu": [
+        -0.2716879120575425,
+        -0.48972610515902476,
+        0.8284648576539532
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 26207,
+      "proper": "Meissa",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 83.78449499999999,
+      "sourceDecDeg": 9.934158,
+      "pmRaCosDecMasYr": -1.03,
+      "pmDecMasYr": -1.86,
+      "propagatedIcrsRaDeg": 83.78449495307947,
+      "propagatedIcrsDecDeg": 9.934157916540132,
+      "azimuthDeg": 217.5927207622312,
+      "altitudeDeg": 65.32831123223923,
+      "enu": [
+        -0.25464362083223896,
+        -0.3307483973489552,
+        0.9087145448492308
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 26311,
+      "proper": "Alnilam",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 84.05338499999999,
+      "sourceDecDeg": -1.20192,
+      "pmRaCosDecMasYr": 1.49,
+      "pmDecMasYr": -1.06,
+      "propagatedIcrsRaDeg": 84.05338506687234,
+      "propagatedIcrsDecDeg": -1.2019200475631515,
+      "azimuthDeg": 206.66384379995137,
+      "altitudeDeg": 55.539352190502434,
+      "enu": [
+        -0.2539236477470934,
+        -0.5056656691403592,
+        0.8245150163384793
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 26727,
+      "proper": "Alnitak",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 85.189695,
+      "sourceDecDeg": -1.942572,
+      "pmRaCosDecMasYr": 3.99,
+      "pmDecMasYr": 2.54,
+      "propagatedIcrsRaDeg": 85.18969517913783,
+      "propagatedIcrsDecDeg": -1.9425718860279204,
+      "azimuthDeg": 204.3212262004342,
+      "altitudeDeg": 55.27411078519025,
+      "enu": [
+        -0.23461187011253928,
+        -0.5190948645363356,
+        0.8218867269972794
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 27366,
+      "proper": "Saiph",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 86.939115,
+      "sourceDecDeg": -9.669605,
+      "pmRaCosDecMasYr": 1.55,
+      "pmDecMasYr": -1.2,
+      "propagatedIcrsRaDeg": 86.93911507055225,
+      "propagatedIcrsDecDeg": -9.669605053845077,
+      "azimuthDeg": 197.7406464314414,
+      "altitudeDeg": 48.4654468426517,
+      "enu": [
+        -0.2020437613320388,
+        -0.6315395966834605,
+        0.7485559807574141
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 27989,
+      "proper": "Betelgeuse",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 88.792935,
+      "sourceDecDeg": 7.407063,
+      "pmRaCosDecMasYr": 27.33,
+      "pmDecMasYr": 10.86,
+      "propagatedIcrsRaDeg": 88.79293623664104,
+      "propagatedIcrsDecDeg": 7.407063487297946,
+      "azimuthDeg": 204.25991901403142,
+      "altitudeDeg": 65.29197831141605,
+      "enu": [
+        -0.17174410024326955,
+        -0.3810815789823024,
+        0.9084496651944922
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 53910,
+      "proper": "Merak",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 165.46015500000001,
+      "sourceDecDeg": 56.382427,
+      "pmRaCosDecMasYr": 81.66,
+      "pmDecMasYr": 33.74,
+      "propagatedIcrsRaDeg": 165.46016161822013,
+      "propagatedIcrsDecDeg": 56.3824285139439,
+      "azimuthDeg": 39.872826938641744,
+      "altitudeDeg": 37.513632391798495,
+      "enu": [
+        0.5085146297119848,
+        0.6087631365542552,
+        0.6089501744326118
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 54061,
+      "proper": "Dubhe",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 165.93232500000002,
+      "sourceDecDeg": 61.751033,
+      "pmRaCosDecMasYr": -136.46,
+      "pmDecMasYr": -35.25,
+      "propagatedIcrsRaDeg": 165.93231206310298,
+      "propagatedIcrsDecDeg": 61.75103141830026,
+      "azimuthDeg": 33.140466179233584,
+      "altitudeDeg": 37.06150663166022,
+      "enu": [
+        0.43625538549260884,
+        0.6681823791166742,
+        0.6026720060419898
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 58001,
+      "proper": "Phecda",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 178.45752000000002,
+      "sourceDecDeg": 53.69476,
+      "pmRaCosDecMasYr": 107.76,
+      "pmDecMasYr": 11.16,
+      "propagatedIcrsRaDeg": 178.45752816651762,
+      "propagatedIcrsDecDeg": 53.69476050075893,
+      "azimuthDeg": 42.19674446599892,
+      "altitudeDeg": 29.84964160414886,
+      "enu": [
+        0.5825699624696831,
+        0.642558519838471,
+        0.4977256145820358
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 59747,
+      "proper": "Imai",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 183.786405,
+      "sourceDecDeg": -58.748928,
+      "pmRaCosDecMasYr": -36.68,
+      "pmDecMasYr": -10.72,
+      "propagatedIcrsRaDeg": 183.7864018274891,
+      "propagatedIcrsDecDeg": -58.748928481015966,
+      "azimuthDeg": 145.8148079833122,
+      "altitudeDeg": -23.08885445021193,
+      "enu": [
+        0.5168626104425716,
+        -0.7609632081694075,
+        -0.39215817948758036
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 59774,
+      "proper": "Megrez",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 183.85629,
+      "sourceDecDeg": 57.032617,
+      "pmRaCosDecMasYr": 103.56,
+      "pmDecMasYr": 7.81,
+      "propagatedIcrsRaDeg": 183.8562985394318,
+      "propagatedIcrsDecDeg": 57.03261735044142,
+      "azimuthDeg": 37.71763072470471,
+      "altitudeDeg": 27.589401105627505,
+      "enu": [
+        0.5422056121141484,
+        0.7010861140283412,
+        0.4631320922896203
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 60260,
+      "proper": "Ginan",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 185.340465,
+      "sourceDecDeg": -60.401147,
+      "pmRaCosDecMasYr": -171.06,
+      "pmDecMasYr": 91.82,
+      "propagatedIcrsRaDeg": 185.34044945994202,
+      "propagatedIcrsDecDeg": -60.40114287995331,
+      "azimuthDeg": 147.22203478713655,
+      "altitudeDeg": -24.388513072420093,
+      "enu": [
+        0.49307521581902225,
+        -0.7657495561915721,
+        -0.4129218433764854
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 60718,
+      "proper": "Acrux",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 186.649665,
+      "sourceDecDeg": -63.099092,
+      "pmRaCosDecMasYr": -35.37,
+      "pmDecMasYr": -14.73,
+      "propagatedIcrsRaDeg": 186.6496614922361,
+      "propagatedIcrsDecDeg": -63.09909266094829,
+      "azimuthDeg": 149.85193823911686,
+      "altitudeDeg": -25.799019574333965,
+      "enu": [
+        0.45217649160198276,
+        -0.7785394792125854,
+        -0.4352156933635529
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 61084,
+      "proper": "Gacrux",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 187.791435,
+      "sourceDecDeg": -57.113212,
+      "pmRaCosDecMasYr": 27.94,
+      "pmDecMasYr": -264.33,
+      "propagatedIcrsRaDeg": 187.79143730890885,
+      "propagatedIcrsDecDeg": -57.11322386072427,
+      "azimuthDeg": 143.35374369602025,
+      "altitudeDeg": -24.546214128278148,
+      "enu": [
+        0.5429313225561231,
+        -0.7298259564483297,
+        -0.4154270721579659
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 62434,
+      "proper": "Mimosa",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 191.930385,
+      "sourceDecDeg": -59.688764,
+      "pmRaCosDecMasYr": -48.24,
+      "pmDecMasYr": -12.82,
+      "propagatedIcrsRaDeg": 191.9303807111446,
+      "propagatedIcrsDecDeg": -59.688764575244825,
+      "azimuthDeg": 145.43410022501735,
+      "altitudeDeg": -27.344167337210976,
+      "enu": [
+        0.5039595737053462,
+        -0.7314619856169284,
+        -0.459334422472414
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 62956,
+      "proper": "Alioth",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 193.50708,
+      "sourceDecDeg": 55.959821,
+      "pmRaCosDecMasYr": 111.74,
+      "pmDecMasYr": -8.99,
+      "propagatedIcrsRaDeg": 193.50708895695905,
+      "propagatedIcrsDecDeg": 55.95982059661031,
+      "azimuthDeg": 37.05201075023565,
+      "altitudeDeg": 22.193802843617704,
+      "enu": [
+        0.5578984457852468,
+        0.738959627978833,
+        0.377740641720997
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 65378,
+      "proper": "Mizar",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 200.981205,
+      "sourceDecDeg": 54.925362,
+      "pmRaCosDecMasYr": 121.23,
+      "pmDecMasYr": -22.01,
+      "propagatedIcrsRaDeg": 200.98121446622218,
+      "propagatedIcrsDecDeg": 54.92536101239118,
+      "azimuthDeg": 36.17671071592975,
+      "altitudeDeg": 17.91042240739741,
+      "enu": [
+        0.561671858714692,
+        0.7680821563291514,
+        0.3075297128030783
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 67301,
+      "proper": "Alkaid",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 206.88531,
+      "sourceDecDeg": 49.313265,
+      "pmRaCosDecMasYr": -121.23,
+      "pmDecMasYr": -15.56,
+      "propagatedIcrsRaDeg": 206.88530165591646,
+      "propagatedIcrsDecDeg": 49.31326430180854,
+      "azimuthDeg": 39.29884685691253,
+      "altitudeDeg": 11.954209829745748,
+      "enu": [
+        0.619629789322922,
+        0.7570707555632104,
+        0.20712989947031094
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 746,
+      "proper": "Caph",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 2.293305,
+      "sourceDecDeg": 59.14978,
+      "pmRaCosDecMasYr": 523.39,
+      "pmDecMasYr": -180.42,
+      "propagatedIcrsRaDeg": 2.3009078402581085,
+      "propagatedIcrsDecDeg": 59.14843578671319,
+      "azimuthDeg": 24.706076151074445,
+      "altitudeDeg": 55.49799940757215,
+      "enu": [
+        0.23674911373785076,
+        0.5145857368468195,
+        0.8241064109556229
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 3179,
+      "proper": "Schedar",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 10.126740000000002,
+      "sourceDecDeg": 56.537331,
+      "pmRaCosDecMasYr": 50.36,
+      "pmDecMasYr": -32.17,
+      "propagatedIcrsRaDeg": 10.127420351021819,
+      "propagatedIcrsDecDeg": 56.53709135621037,
+      "azimuthDeg": 32.71658304573266,
+      "altitudeDeg": 53.85278858974287,
+      "enu": [
+        0.31881085352021343,
+        0.4962829272016783,
+        0.8075041150643424
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 4427,
+      "proper": "Cih",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 14.177145,
+      "sourceDecDeg": 60.71674,
+      "pmRaCosDecMasYr": 25.65,
+      "pmDecMasYr": -3.82,
+      "propagatedIcrsRaDeg": 14.177535639837206,
+      "propagatedIcrsDecDeg": 60.716711543349234,
+      "azimuthDeg": 28.754088913033087,
+      "altitudeDeg": 49.862567172868374,
+      "enu": [
+        0.3100968681324391,
+        0.5651363091687394,
+        0.7645004149335615
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 6686,
+      "proper": "Ruchbah",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 21.453239999999997,
+      "sourceDecDeg": 60.235283,
+      "pmRaCosDecMasYr": 297.24,
+      "pmDecMasYr": -49.49,
+      "propagatedIcrsRaDeg": 21.45770013282677,
+      "propagatedIcrsDecDeg": 60.23491426248447,
+      "azimuthDeg": 31.863593024078746,
+      "altitudeDeg": 46.891381861187924,
+      "enu": [
+        0.3607573604451618,
+        0.580402672622673,
+        0.7300594938065649
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 8886,
+      "proper": "Segin",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 28.598760000000002,
+      "sourceDecDeg": 63.670101,
+      "pmRaCosDecMasYr": 31.98,
+      "pmDecMasYr": -18.66,
+      "propagatedIcrsRaDeg": 28.599297101440836,
+      "propagatedIcrsDecDeg": 63.669961996250045,
+      "azimuthDeg": 29.019429676354466,
+      "altitudeDeg": 42.53849068227111,
+      "enu": [
+        0.3574375489175308,
+        0.6443190188789129,
+        0.6760853500370665
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 24436,
+      "proper": "Rigel",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 78.63447,
+      "sourceDecDeg": -8.20164,
+      "pmRaCosDecMasYr": 1.87,
+      "pmDecMasYr": -0.56,
+      "propagatedIcrsRaDeg": 78.63448407401899,
+      "propagatedIcrsDecDeg": -8.201644171572081,
+      "azimuthDeg": 90.15334019199629,
+      "altitudeDeg": -16.10594007932459,
+      "enu": [
+        0.9607469579889933,
+        -0.0025712447929283466,
+        -0.27741425957421567
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 25336,
+      "proper": "Bellatrix",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 81.282765,
+      "sourceDecDeg": 6.349702,
+      "pmRaCosDecMasYr": -8.75,
+      "pmDecMasYr": -13.28,
+      "propagatedIcrsRaDeg": 81.2826994168681,
+      "propagatedIcrsDecDeg": 6.349603074137914,
+      "azimuthDeg": 75.90252091558864,
+      "altitudeDeg": -10.919975493404433,
+      "enu": [
+        0.9523208016968402,
+        0.2391619080513291,
+        -0.1894377797397744
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 25930,
+      "proper": "Mintaka",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 83.001675,
+      "sourceDecDeg": -0.299092,
+      "pmRaCosDecMasYr": 1.67,
+      "pmDecMasYr": 0.56,
+      "propagatedIcrsRaDeg": 83.00168744039411,
+      "propagatedIcrsDecDeg": -0.2990878284276693,
+      "azimuthDeg": 80.77071137000888,
+      "altitudeDeg": -15.89327825595201,
+      "enu": [
+        0.9493227158681393,
+        0.15425477813110378,
+        -0.2738463886204524
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 26207,
+      "proper": "Meissa",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 83.78449499999999,
+      "sourceDecDeg": 9.934158,
+      "pmRaCosDecMasYr": -1.03,
+      "pmDecMasYr": -1.86,
+      "propagatedIcrsRaDeg": 83.7844872104962,
+      "propagatedIcrsDecDeg": 9.934144144420404,
+      "azimuthDeg": 71.46672205158647,
+      "altitudeDeg": -11.044620046468692,
+      "enu": [
+        0.9305780423808956,
+        0.31196817301526414,
+        -0.19157339602371273
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 26311,
+      "proper": "Alnilam",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 84.05338499999999,
+      "sourceDecDeg": -1.20192,
+      "pmRaCosDecMasYr": 1.49,
+      "pmDecMasYr": -1.06,
+      "propagatedIcrsRaDeg": 84.05339610180471,
+      "propagatedIcrsDecDeg": -1.2019278961904474,
+      "azimuthDeg": 81.00474543230497,
+      "altitudeDeg": -17.26091028195568,
+      "enu": [
+        0.9432186444251128,
+        0.14931107785469044,
+        -0.2967234248230548
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 26727,
+      "proper": "Alnitak",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 85.189695,
+      "sourceDecDeg": -1.942572,
+      "pmRaCosDecMasYr": 3.99,
+      "pmDecMasYr": 2.54,
+      "propagatedIcrsRaDeg": 85.18972473954364,
+      "propagatedIcrsDecDeg": -1.942553078939556,
+      "azimuthDeg": 81.0503908679161,
+      "altitudeDeg": -18.616133836376676,
+      "enu": [
+        0.936141083022753,
+        0.14742632174049514,
+        -0.3192261773963019
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 27366,
+      "proper": "Saiph",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 86.939115,
+      "sourceDecDeg": -9.669605,
+      "pmRaCosDecMasYr": 1.55,
+      "pmDecMasYr": -1.2,
+      "propagatedIcrsRaDeg": 86.93912671272258,
+      "propagatedIcrsDecDeg": -9.669613939083357,
+      "azimuthDeg": 87.29335608741347,
+      "altitudeDeg": -23.995208145948574,
+      "enu": [
+        0.9125602874137294,
+        0.043141305426956156,
+        -0.40666023853018823
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 27989,
+      "proper": "Betelgeuse",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 88.792935,
+      "sourceDecDeg": 7.407063,
+      "pmRaCosDecMasYr": 27.33,
+      "pmDecMasYr": 10.86,
+      "propagatedIcrsRaDeg": 88.79314030084373,
+      "propagatedIcrsDecDeg": 7.407143898659114,
+      "azimuthDeg": 70.76442102795674,
+      "altitudeDeg": -16.560781923334282,
+      "enu": [
+        0.9050057349068658,
+        0.3157866098054806,
+        -0.2850323435213009
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 53910,
+      "proper": "Merak",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 165.46015500000001,
+      "sourceDecDeg": 56.382427,
+      "pmRaCosDecMasYr": 81.66,
+      "pmDecMasYr": 33.74,
+      "propagatedIcrsRaDeg": 165.46125373017443,
+      "propagatedIcrsDecDeg": 56.382678332375406,
+      "azimuthDeg": 353.99967600184993,
+      "altitudeDeg": -3.000388049934288,
+      "enu": [
+        -0.10439078973396405,
+        0.9931579948387821,
+        -0.05234271970894178
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 54061,
+      "proper": "Dubhe",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 165.93232500000002,
+      "sourceDecDeg": 61.751033,
+      "pmRaCosDecMasYr": -136.46,
+      "pmDecMasYr": -35.25,
+      "propagatedIcrsRaDeg": 165.9301773009007,
+      "propagatedIcrsDecDeg": 61.75077039763795,
+      "azimuthDeg": 354.6459189250539,
+      "altitudeDeg": 2.333749426487101,
+      "enu": [
+        -0.09323301028051664,
+        0.9948112679906266,
+        0.04072034961680645
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 58001,
+      "proper": "Phecda",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 178.45752000000002,
+      "sourceDecDeg": 53.69476,
+      "pmRaCosDecMasYr": 107.76,
+      "pmDecMasYr": 11.16,
+      "propagatedIcrsRaDeg": 178.45887576603948,
+      "propagatedIcrsDecDeg": 53.69484312582337,
+      "azimuthDeg": 346.11248659084157,
+      "altitudeDeg": -3.678691030648145,
+      "enu": [
+        -0.23952194439955107,
+        0.9687685909225361,
+        -0.06416116732901858
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 59747,
+      "proper": "Imai",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 183.786405,
+      "sourceDecDeg": -58.748928,
+      "pmRaCosDecMasYr": -36.68,
+      "pmDecMasYr": -10.72,
+      "propagatedIcrsRaDeg": 183.78587831481332,
+      "propagatedIcrsDecDeg": -58.7490078547394,
+      "azimuthDeg": 206.14359879572316,
+      "altitudeDeg": -55.232915157667904,
+      "enu": [
+        -0.25126127889609595,
+        -0.5119017615292666,
+        -0.8214769359335247
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 59774,
+      "proper": "Megrez",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 183.85629,
+      "sourceDecDeg": 57.032617,
+      "pmRaCosDecMasYr": 103.56,
+      "pmDecMasYr": 7.81,
+      "propagatedIcrsRaDeg": 183.8577076748979,
+      "propagatedIcrsDecDeg": 57.03267517052826,
+      "azimuthDeg": 344.56539964879084,
+      "altitudeDeg": 0.5803851980784168,
+      "enu": [
+        -0.2661246226169569,
+        0.9638854077581809,
+        0.010129459404511949
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 60260,
+      "proper": "Ginan",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 185.340465,
+      "sourceDecDeg": -60.401147,
+      "pmRaCosDecMasYr": -171.06,
+      "pmDecMasYr": 91.82,
+      "propagatedIcrsRaDeg": 185.337885173157,
+      "propagatedIcrsDecDeg": -60.40046298617962,
+      "azimuthDeg": 204.95851344072784,
+      "altitudeDeg": -53.53921230237235,
+      "enu": [
+        -0.2507603621152307,
+        -0.5387755062258953,
+        -0.8042637593991592
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 60718,
+      "proper": "Acrux",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 186.649665,
+      "sourceDecDeg": -63.099092,
+      "pmRaCosDecMasYr": -35.37,
+      "pmDecMasYr": -14.73,
+      "propagatedIcrsRaDeg": 186.6490826568537,
+      "propagatedIcrsDecDeg": -63.099201726056506,
+      "azimuthDeg": 202.39347775037464,
+      "altitudeDeg": -51.25444688071698,
+      "enu": [
+        -0.2384319558330245,
+        -0.5786662455974386,
+        -0.7799330603608258
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 61084,
+      "proper": "Gacrux",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 187.791435,
+      "sourceDecDeg": -57.113212,
+      "pmRaCosDecMasYr": 27.94,
+      "pmDecMasYr": -264.33,
+      "propagatedIcrsRaDeg": 187.79181833347144,
+      "propagatedIcrsDecDeg": -57.11518105604368,
+      "azimuthDeg": 210.68133650319433,
+      "altitudeDeg": -54.60788294461157,
+      "enu": [
+        -0.29552840697752775,
+        -0.49809608819312134,
+        -0.8152074874509158
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 62434,
+      "proper": "Mimosa",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 191.930385,
+      "sourceDecDeg": -59.688764,
+      "pmRaCosDecMasYr": -48.24,
+      "pmDecMasYr": -12.82,
+      "propagatedIcrsRaDeg": 191.92967298421073,
+      "propagatedIcrsDecDeg": -59.68885949728166,
+      "azimuthDeg": 209.1804097083398,
+      "altitudeDeg": -51.36737262609359,
+      "enu": [
+        -0.30439639852796935,
+        -0.5450907807429466,
+        -0.7811650743039186
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 62956,
+      "proper": "Alioth",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 193.50708,
+      "sourceDecDeg": 55.959821,
+      "pmRaCosDecMasYr": 111.74,
+      "pmDecMasYr": -8.99,
+      "propagatedIcrsRaDeg": 193.50856698586315,
+      "propagatedIcrsDecDeg": 55.95975402241532,
+      "azimuthDeg": 339.38636194800847,
+      "altitudeDeg": 2.2142102113382616,
+      "enu": [
+        -0.3518015840021804,
+        0.9352769284066603,
+        0.03863564007182343
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 65378,
+      "proper": "Mizar",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 200.981205,
+      "sourceDecDeg": 54.925362,
+      "pmRaCosDecMasYr": 121.23,
+      "pmDecMasYr": -22.01,
+      "propagatedIcrsRaDeg": 200.98277652731338,
+      "propagatedIcrsDecDeg": 54.92519803217339,
+      "azimuthDeg": 335.3399340249106,
+      "altitudeDeg": 3.8560481048516526,
+      "enu": [
+        -0.41628920972609257,
+        0.9067418260933592,
+        0.06724994184760122
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 67301,
+      "proper": "Alkaid",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 206.88531,
+      "sourceDecDeg": 49.313265,
+      "pmRaCosDecMasYr": -121.23,
+      "pmDecMasYr": -15.56,
+      "propagatedIcrsRaDeg": 206.88392476128615,
+      "propagatedIcrsDecDeg": 49.31314908160529,
+      "azimuthDeg": 328.9215345342959,
+      "altitudeDeg": 1.9942191403562943,
+      "enu": [
+        -0.5158988186423736,
+        0.8559424408101715,
+        0.03479866295318748
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 746,
+      "proper": "Caph",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 2.293305,
+      "sourceDecDeg": 59.14978,
+      "pmRaCosDecMasYr": 523.39,
+      "pmDecMasYr": -180.42,
+      "propagatedIcrsRaDeg": 2.3076129015704168,
+      "propagatedIcrsDecDeg": 59.14724984818786,
+      "azimuthDeg": 13.392469462368384,
+      "altitudeDeg": 2.4545486888787114,
+      "enu": [
+        0.23140753774141717,
+        0.9719137883974628,
+        0.04282685371757481
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 3179,
+      "proper": "Schedar",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 10.126740000000002,
+      "sourceDecDeg": 56.537331,
+      "pmRaCosDecMasYr": 50.36,
+      "pmDecMasYr": -32.17,
+      "propagatedIcrsRaDeg": 10.128020400230463,
+      "propagatedIcrsDecDeg": 56.53687999196958,
+      "azimuthDeg": 10.366729552752469,
+      "altitudeDeg": -1.4108956695046138,
+      "enu": [
+        0.17989342007143622,
+        0.9833779031658173,
+        -0.024622286250516046
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 4427,
+      "proper": "Cih",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 14.177145,
+      "sourceDecDeg": 60.71674,
+      "pmRaCosDecMasYr": 25.65,
+      "pmDecMasYr": -3.82,
+      "propagatedIcrsRaDeg": 14.177880175993685,
+      "propagatedIcrsDecDeg": 60.716686444194295,
+      "azimuthDeg": 7.257545185484867,
+      "altitudeDeg": 2.0863948925179048,
+      "enu": [
+        0.12624585542714378,
+        0.9913307001516455,
+        0.03640641323060023
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 6686,
+      "proper": "Ruchbah",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 21.453239999999997,
+      "sourceDecDeg": 60.235283,
+      "pmRaCosDecMasYr": 297.24,
+      "pmDecMasYr": -49.49,
+      "propagatedIcrsRaDeg": 21.461633799806236,
+      "propagatedIcrsDecDeg": 60.23458891900124,
+      "azimuthDeg": 3.807430820894511,
+      "altitudeDeg": 0.9879204341443617,
+      "enu": [
+        0.06639343630783341,
+        0.997644545166795,
+        0.017241609964741323
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 8886,
+      "proper": "Segin",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 28.598760000000002,
+      "sourceDecDeg": 63.670101,
+      "pmRaCosDecMasYr": 31.98,
+      "pmDecMasYr": -18.66,
+      "propagatedIcrsRaDeg": 28.599770810083882,
+      "propagatedIcrsDecDeg": 63.66983939598786,
+      "azimuthDeg": 0.22777928141167672,
+      "altitudeDeg": 4.186311032303914,
+      "enu": [
+        0.0039648811426611355,
+        0.9973240654515564,
+        0.07299991910066814
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 24436,
+      "proper": "Rigel",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 78.63447,
+      "sourceDecDeg": -8.20164,
+      "pmRaCosDecMasYr": 1.87,
+      "pmDecMasYr": -0.56,
+      "propagatedIcrsRaDeg": 78.63449648702998,
+      "propagatedIcrsDecDeg": -8.201647850817032,
+      "azimuthDeg": 285.2072236600601,
+      "altitudeDeg": -39.05789539209833,
+      "enu": [
+        -0.749318954316982,
+        0.20368690280022744,
+        -0.630105348595737
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 25336,
+      "proper": "Bellatrix",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 81.282765,
+      "sourceDecDeg": 6.349702,
+      "pmRaCosDecMasYr": -8.75,
+      "pmDecMasYr": -13.28,
+      "propagatedIcrsRaDeg": 81.28264157384356,
+      "propagatedIcrsDecDeg": 6.349515823446767,
+      "azimuthDeg": 297.3803090886953,
+      "altitudeDeg": -28.247927956368997,
+      "enu": [
+        -0.7822228222704274,
+        0.40512480161876885,
+        -0.4732878103571235
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 25930,
+      "proper": "Mintaka",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 83.001675,
+      "sourceDecDeg": -0.299092,
+      "pmRaCosDecMasYr": 1.67,
+      "pmDecMasYr": 0.56,
+      "propagatedIcrsRaDeg": 83.00169841257949,
+      "propagatedIcrsDecDeg": -0.2990841491820814,
+      "azimuthDeg": 290.1340984398069,
+      "altitudeDeg": -30.984751511382242,
+      "enu": [
+        -0.8049140982960303,
+        0.29510002868206503,
+        -0.5148099333114434
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 26207,
+      "proper": "Meissa",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 83.78449499999999,
+      "sourceDecDeg": 9.934158,
+      "pmRaCosDecMasYr": -1.03,
+      "pmDecMasYr": -1.86,
+      "propagatedIcrsRaDeg": 83.78448034030605,
+      "propagatedIcrsDecDeg": 9.934131924068822,
+      "azimuthDeg": 298.6742520591472,
+      "altitudeDeg": -24.048821034179234,
+      "enu": [
+        -0.801205598192182,
+        0.43817939528735433,
+        -0.40751491625597747
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 26311,
+      "proper": "Alnilam",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 84.05338499999999,
+      "sourceDecDeg": -1.20192,
+      "pmRaCosDecMasYr": 1.49,
+      "pmDecMasYr": -1.06,
+      "propagatedIcrsRaDeg": 84.05340589338036,
+      "propagatedIcrsDecDeg": -1.2019348604766478,
+      "azimuthDeg": 288.5657275395637,
+      "altitudeDeg": -30.65770133046469,
+      "enu": [
+        -0.8154617985741771,
+        0.27389029694884953,
+        -0.5099079919980065
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 26727,
+      "proper": "Alnitak",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 85.189695,
+      "sourceDecDeg": -1.942572,
+      "pmRaCosDecMasYr": 3.99,
+      "pmDecMasYr": 2.54,
+      "propagatedIcrsRaDeg": 85.18975096924154,
+      "propagatedIcrsDecDeg": -1.942536390932199,
+      "azimuthDeg": 287.1073568809475,
+      "altitudeDeg": -30.151030277043294,
+      "enu": [
+        -0.8264457797839245,
+        0.2543640848054713,
+        -0.5022810821028559
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 27366,
+      "proper": "Saiph",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 86.939115,
+      "sourceDecDeg": -9.669605,
+      "pmRaCosDecMasYr": 1.55,
+      "pmDecMasYr": -1.2,
+      "propagatedIcrsRaDeg": 86.93913704311636,
+      "propagatedIcrsDecDeg": -9.669621823180501,
+      "azimuthDeg": 278.3614754422233,
+      "altitudeDeg": -32.8271012409499,
+      "enu": [
+        -0.8313780596097183,
+        0.12219609575827244,
+        -0.5421057426194771
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 27989,
+      "proper": "Betelgeuse",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 88.792935,
+      "sourceDecDeg": 7.407063,
+      "pmRaCosDecMasYr": 27.33,
+      "pmDecMasYr": 10.86,
+      "propagatedIcrsRaDeg": 88.79332137225329,
+      "propagatedIcrsDecDeg": 7.407215249623321,
+      "azimuthDeg": 293.18061239098773,
+      "altitudeDeg": -21.747505905538972,
+      "enu": [
+        -0.8538402733454904,
+        0.3656144635129545,
+        -0.3705170059301366
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 53910,
+      "proper": "Merak",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 165.46015500000001,
+      "sourceDecDeg": 56.382427,
+      "pmRaCosDecMasYr": 81.66,
+      "pmDecMasYr": 33.74,
+      "propagatedIcrsRaDeg": 165.462222800829,
+      "propagatedIcrsDecDeg": 56.382899994574856,
+      "azimuthDeg": 323.09407228414346,
+      "altitudeDeg": 49.98374345776891,
+      "enu": [
+        -0.38612636344511286,
+        0.5141612356753504,
+        0.7658620340384091
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 54061,
+      "proper": "Dubhe",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 165.93232500000002,
+      "sourceDecDeg": 61.751033,
+      "pmRaCosDecMasYr": -136.46,
+      "pmDecMasYr": -35.25,
+      "propagatedIcrsRaDeg": 165.92828310252224,
+      "propagatedIcrsDecDeg": 61.75053875961082,
+      "azimuthDeg": 330.6908296894976,
+      "altitudeDeg": 47.97284855460885,
+      "enu": [
+        -0.327726522193335,
+        0.5837828402436609,
+        0.7428276530179163
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 58001,
+      "proper": "Phecda",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 178.45752000000002,
+      "sourceDecDeg": 53.69476,
+      "pmRaCosDecMasYr": 107.76,
+      "pmDecMasYr": 11.16,
+      "propagatedIcrsRaDeg": 178.46007152973291,
+      "propagatedIcrsDecDeg": 53.69491642847697,
+      "azimuthDeg": 324.8955085410581,
+      "altitudeDeg": 57.81688975580225,
+      "enu": [
+        -0.3062973727123765,
+        0.435744464992162,
+        0.8463502116134844
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 59747,
+      "proper": "Imai",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 183.786405,
+      "sourceDecDeg": -58.748928,
+      "pmRaCosDecMasYr": -36.68,
+      "pmDecMasYr": -10.72,
+      "propagatedIcrsRaDeg": 183.78541378672534,
+      "propagatedIcrsDecDeg": -58.74907828328271,
+      "azimuthDeg": 192.83645229485538,
+      "altitudeDeg": -1.803012062670137,
+      "enu": [
+        -0.22205886092438928,
+        -0.9745254859763799,
+        -0.03146330350524593
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 59774,
+      "proper": "Megrez",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 183.85629,
+      "sourceDecDeg": 57.032617,
+      "pmRaCosDecMasYr": 103.56,
+      "pmDecMasYr": 7.81,
+      "propagatedIcrsRaDeg": 183.85895804023875,
+      "propagatedIcrsDecDeg": 57.03272646251067,
+      "azimuthDeg": 333.42586927353693,
+      "altitudeDeg": 58.07258993218349,
+      "enu": [
+        -0.2365813684505504,
+        0.47297534337271724,
+        0.8487187877403947
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 60260,
+      "proper": "Ginan",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 185.340465,
+      "sourceDecDeg": -60.401147,
+      "pmRaCosDecMasYr": -171.06,
+      "pmDecMasYr": 91.82,
+      "propagatedIcrsRaDeg": 185.3356099061066,
+      "propagatedIcrsDecDeg": -60.39985965790603,
+      "azimuthDeg": 191.5042024726461,
+      "altitudeDeg": -3.0558635903023523,
+      "enu": [
+        -0.1991562114478573,
+        -0.9785166785192018,
+        -0.05330959858679911
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 60718,
+      "proper": "Acrux",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 186.649665,
+      "sourceDecDeg": -63.099092,
+      "pmRaCosDecMasYr": -35.37,
+      "pmDecMasYr": -14.73,
+      "propagatedIcrsRaDeg": 186.64856903788817,
+      "propagatedIcrsDecDeg": -63.09929850031995,
+      "azimuthDeg": 189.9873738709336,
+      "altitudeDeg": -5.376433072211416,
+      "enu": [
+        -0.17266815889119536,
+        -0.9805132532740533,
+        -0.09369881033960435
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 61084,
+      "proper": "Gacrux",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 187.791435,
+      "sourceDecDeg": -57.113212,
+      "pmRaCosDecMasYr": 27.94,
+      "pmDecMasYr": -264.33,
+      "propagatedIcrsRaDeg": 187.7921564599514,
+      "propagatedIcrsDecDeg": -57.116917724162846,
+      "azimuthDeg": 191.4054515748929,
+      "altitudeDeg": 0.4638310767350343,
+      "enu": [
+        -0.1977441304842478,
+        -0.9802202431708908,
+        0.008095291040376854
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 62434,
+      "proper": "Mimosa",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 191.930385,
+      "sourceDecDeg": -59.688764,
+      "pmRaCosDecMasYr": -48.24,
+      "pmDecMasYr": -12.82,
+      "propagatedIcrsRaDeg": 191.92904499677806,
+      "propagatedIcrsDecDeg": -59.68894372082521,
+      "azimuthDeg": 188.58728353029431,
+      "altitudeDeg": -1.370576923592945,
+      "enu": [
+        -0.14927317236551849,
+        -0.9885066570748275,
+        -0.023918798688132636
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 62956,
+      "proper": "Alioth",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 193.50708,
+      "sourceDecDeg": 55.959821,
+      "pmRaCosDecMasYr": 111.74,
+      "pmDecMasYr": -8.99,
+      "propagatedIcrsRaDeg": 193.5098784741711,
+      "propagatedIcrsDecDeg": 55.95969493463322,
+      "azimuthDeg": 340.5792909183198,
+      "altitudeDeg": 62.17768398923222,
+      "enu": [
+        -0.15518905108556685,
+        0.4401753219774757,
+        0.8843992561876038
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 65378,
+      "proper": "Mizar",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 200.981205,
+      "sourceDecDeg": 54.925362,
+      "pmRaCosDecMasYr": 121.23,
+      "pmDecMasYr": -22.01,
+      "propagatedIcrsRaDeg": 200.98416257317373,
+      "propagatedIcrsDecDeg": 54.92505339891884,
+      "azimuthDeg": 348.3265340732831,
+      "altitudeDeg": 64.8479925474707,
+      "enu": [
+        -0.085996156539683,
+        0.4162303572235129,
+        0.9051833796452458
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 67301,
+      "proper": "Alkaid",
+      "site": {
+        "id": "hangzhou",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 206.88531,
+      "sourceDecDeg": 49.313265,
+      "pmRaCosDecMasYr": -121.23,
+      "pmDecMasYr": -15.56,
+      "propagatedIcrsRaDeg": 206.88270301312258,
+      "propagatedIcrsDecDeg": 49.31304683009775,
+      "azimuthDeg": 354.62147547323934,
+      "altitudeDeg": 71.09986744738833,
+      "enu": [
+        -0.030362653740131123,
+        0.32249344337854113,
+        0.946084609448705
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 746,
+      "proper": "Caph",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 2.293305,
+      "sourceDecDeg": 59.14978,
+      "pmRaCosDecMasYr": 523.39,
+      "pmDecMasYr": -180.42,
+      "propagatedIcrsRaDeg": 2.2933507979274297,
+      "propagatedIcrsDecDeg": 59.14977190438465,
+      "azimuthDeg": 322.95460049484603,
+      "altitudeDeg": -47.54921939857789,
+      "enu": [
+        -0.4066260216741764,
+        0.5387222848638151,
+        -0.7378574240925836
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 3179,
+      "proper": "Schedar",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 10.126740000000002,
+      "sourceDecDeg": 56.537331,
+      "pmRaCosDecMasYr": 50.36,
+      "pmDecMasYr": -32.17,
+      "propagatedIcrsRaDeg": 10.126744098158747,
+      "propagatedIcrsDecDeg": 56.53732955650316,
+      "azimuthDeg": 318.4521028024963,
+      "altitudeDeg": -43.770447917660725,
+      "enu": [
+        -0.47894123535313793,
+        0.5404335642994236,
+        -0.6917708115098751
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 4427,
+      "proper": "Cih",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 14.177145,
+      "sourceDecDeg": 60.71674,
+      "pmRaCosDecMasYr": 25.65,
+      "pmDecMasYr": -3.82,
+      "propagatedIcrsRaDeg": 14.177147353043287,
+      "propagatedIcrsDecDeg": 60.71673982859315,
+      "azimuthDeg": 323.97130199576105,
+      "altitudeDeg": -41.444527113410366,
+      "enu": [
+        -0.44090570122914674,
+        0.6062158751663317,
+        -0.6618946104327734
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 6686,
+      "proper": "Ruchbah",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 21.453239999999997,
+      "sourceDecDeg": 60.235283,
+      "pmRaCosDecMasYr": 297.24,
+      "pmDecMasYr": -49.49,
+      "propagatedIcrsRaDeg": 21.45326686616356,
+      "propagatedIcrsDecDeg": 60.235280779336584,
+      "azimuthDeg": 323.36627787827746,
+      "altitudeDeg": -37.85855371420448,
+      "enu": [
+        -0.4711093507933338,
+        0.6335698979857284,
+        -0.6137142364011424
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 8886,
+      "proper": "Segin",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 28.598760000000002,
+      "sourceDecDeg": 63.670101,
+      "pmRaCosDecMasYr": 31.98,
+      "pmDecMasYr": -18.66,
+      "propagatedIcrsRaDeg": 28.59876323527677,
+      "propagatedIcrsDecDeg": 63.67010016270902,
+      "azimuthDeg": 327.9953398599502,
+      "altitudeDeg": -34.83391369852484,
+      "enu": [
+        -0.4350203119051875,
+        0.696052043560358,
+        -0.5711995105787144
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 24436,
+      "proper": "Rigel",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 78.63447,
+      "sourceDecDeg": -8.20164,
+      "pmRaCosDecMasYr": 1.87,
+      "pmDecMasYr": -0.56,
+      "propagatedIcrsRaDeg": 78.63447008477564,
+      "propagatedIcrsDecDeg": -8.201640025127704,
+      "azimuthDeg": 286.41612226112244,
+      "altitudeDeg": 36.487136645839186,
+      "enu": [
+        -0.7712153043532187,
+        0.22721683455480787,
+        0.5946422995602191
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 25336,
+      "proper": "Bellatrix",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 81.282765,
+      "sourceDecDeg": 6.349702,
+      "pmRaCosDecMasYr": -8.75,
+      "pmDecMasYr": -13.28,
+      "propagatedIcrsRaDeg": 81.28276460495621,
+      "propagatedIcrsDecDeg": 6.349701404114485,
+      "azimuthDeg": 301.61762467507174,
+      "altitudeDeg": 28.99875636095724,
+      "enu": [
+        -0.744805113923783,
+        0.4585230436186176,
+        0.4847906359901146
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 25930,
+      "proper": "Mintaka",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 83.001675,
+      "sourceDecDeg": -0.299092,
+      "pmRaCosDecMasYr": 1.67,
+      "pmDecMasYr": 0.56,
+      "propagatedIcrsRaDeg": 83.00167507493543,
+      "propagatedIcrsDecDeg": -0.2990919748722976,
+      "azimuthDeg": 297.3376500825957,
+      "altitudeDeg": 34.828481474183974,
+      "enu": [
+        -0.7291875922272424,
+        0.3769687974971687,
+        0.5711216867317993
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 26207,
+      "proper": "Meissa",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 83.78449499999999,
+      "sourceDecDeg": 9.934158,
+      "pmRaCosDecMasYr": -1.03,
+      "pmDecMasYr": -1.86,
+      "propagatedIcrsRaDeg": 83.78449495307947,
+      "propagatedIcrsDecDeg": 9.934157916540132,
+      "azimuthDeg": 306.48208391450373,
+      "altitudeDeg": 28.141432346655964,
+      "enu": [
+        -0.708993727275066,
+        0.5242847520463382,
+        0.47164965117798935
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 26311,
+      "proper": "Alnilam",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 84.05338499999999,
+      "sourceDecDeg": -1.20192,
+      "pmRaCosDecMasYr": 1.49,
+      "pmDecMasYr": -1.06,
+      "propagatedIcrsRaDeg": 84.05338506687234,
+      "propagatedIcrsDecDeg": -1.2019200475631515,
+      "azimuthDeg": 297.392250605376,
+      "altitudeDeg": 36.213887916909286,
+      "enu": [
+        -0.7163548747174051,
+        0.3712001849672534,
+        0.5908012492783743
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 26727,
+      "proper": "Alnitak",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 85.189695,
+      "sourceDecDeg": -1.942572,
+      "pmRaCosDecMasYr": 3.99,
+      "pmDecMasYr": 2.54,
+      "propagatedIcrsRaDeg": 85.18969517913783,
+      "propagatedIcrsDecDeg": -1.9425718860279204,
+      "azimuthDeg": 297.670741355187,
+      "altitudeDeg": 37.55160578264539,
+      "enu": [
+        -0.7021323404750888,
+        0.36817046186605645,
+        0.6094757480559081
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 27366,
+      "proper": "Saiph",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 86.939115,
+      "sourceDecDeg": -9.669605,
+      "pmRaCosDecMasYr": 1.55,
+      "pmDecMasYr": -1.2,
+      "propagatedIcrsRaDeg": 86.93911507055225,
+      "propagatedIcrsDecDeg": -9.669605053845077,
+      "azimuthDeg": 291.4109830866411,
+      "altitudeDeg": 43.901559487579426,
+      "enu": [
+        -0.6708053220095593,
+        0.26303407830196524,
+        0.6934214401181197
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 27989,
+      "proper": "Betelgeuse",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 88.792935,
+      "sourceDecDeg": 7.407063,
+      "pmRaCosDecMasYr": 27.33,
+      "pmDecMasYr": 10.86,
+      "propagatedIcrsRaDeg": 88.79293623664104,
+      "propagatedIcrsDecDeg": 7.407063487297946,
+      "azimuthDeg": 308.829033881499,
+      "altitudeDeg": 33.32196137180767,
+      "enu": [
+        -0.6509469517493741,
+        0.5239181035939637,
+        0.5493431411556011
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 53910,
+      "proper": "Merak",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 165.46015500000001,
+      "sourceDecDeg": 56.382427,
+      "pmRaCosDecMasYr": 81.66,
+      "pmDecMasYr": 33.74,
+      "propagatedIcrsRaDeg": 165.46016161822013,
+      "propagatedIcrsDecDeg": 56.3824285139439,
+      "azimuthDeg": 18.90445742527801,
+      "altitudeDeg": -5.1919624767197465,
+      "enu": [
+        0.322661717756425,
+        0.9421785687414742,
+        -0.09049287540320662
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 54061,
+      "proper": "Dubhe",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 165.93232500000002,
+      "sourceDecDeg": 61.751033,
+      "pmRaCosDecMasYr": -136.46,
+      "pmDecMasYr": -35.25,
+      "propagatedIcrsRaDeg": 165.93231206310298,
+      "propagatedIcrsDecDeg": 61.75103141830026,
+      "azimuthDeg": 16.45736170946739,
+      "altitudeDeg": -9.987968332795973,
+      "enu": [
+        0.2790080675177195,
+        0.9444959442889688,
+        -0.1734413718860551
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 58001,
+      "proper": "Phecda",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 178.45752000000002,
+      "sourceDecDeg": 53.69476,
+      "pmRaCosDecMasYr": 107.76,
+      "pmDecMasYr": 11.16,
+      "propagatedIcrsRaDeg": 178.45752816651762,
+      "propagatedIcrsDecDeg": 53.69476050075893,
+      "azimuthDeg": 26.609845589968547,
+      "altitudeDeg": -7.136610400931938,
+      "enu": [
+        0.44444264229088737,
+        0.8871506480488811,
+        -0.12423552382448612
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 59747,
+      "proper": "Imai",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 183.786405,
+      "sourceDecDeg": -58.748928,
+      "pmRaCosDecMasYr": -36.68,
+      "pmDecMasYr": -10.72,
+      "propagatedIcrsRaDeg": 183.7864018274891,
+      "propagatedIcrsDecDeg": -58.748928481015966,
+      "azimuthDeg": 142.14027139727682,
+      "altitudeDeg": 46.86788419466839,
+      "enu": [
+        0.419597023087758,
+        -0.539778383163795,
+        0.7297791688483378
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 59774,
+      "proper": "Megrez",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 183.85629,
+      "sourceDecDeg": 57.032617,
+      "pmRaCosDecMasYr": 103.56,
+      "pmDecMasYr": 7.81,
+      "propagatedIcrsRaDeg": 183.8562985394318,
+      "propagatedIcrsDecDeg": 57.03261735044142,
+      "azimuthDeg": 26.730031127316316,
+      "altitudeDeg": -11.666403772381713,
+      "enu": [
+        0.4404952840244424,
+        0.8746849578756268,
+        -0.20221307875194117
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 60260,
+      "proper": "Ginan",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 185.340465,
+      "sourceDecDeg": -60.401147,
+      "pmRaCosDecMasYr": -171.06,
+      "pmDecMasYr": 91.82,
+      "propagatedIcrsRaDeg": 185.34044945994202,
+      "propagatedIcrsDecDeg": -60.40114287995331,
+      "azimuthDeg": 144.27300910265734,
+      "altitudeDeg": 45.78178413874719,
+      "enu": [
+        0.40722429867811843,
+        -0.5661495887177258,
+        0.7166889239836656
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 60718,
+      "proper": "Acrux",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 186.649665,
+      "sourceDecDeg": -63.099092,
+      "pmRaCosDecMasYr": -35.37,
+      "pmDecMasYr": -14.73,
+      "propagatedIcrsRaDeg": 186.6496614922361,
+      "propagatedIcrsDecDeg": -63.09909266094829,
+      "azimuthDeg": 147.84338217339175,
+      "altitudeDeg": 44.62644678549832,
+      "enu": [
+        0.3787929413484799,
+        -0.6025242371512677,
+        0.7024816376460312
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 61084,
+      "proper": "Gacrux",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 187.791435,
+      "sourceDecDeg": -57.113212,
+      "pmRaCosDecMasYr": 27.94,
+      "pmDecMasYr": -264.33,
+      "propagatedIcrsRaDeg": 187.79143730890885,
+      "propagatedIcrsDecDeg": -57.11322386072427,
+      "azimuthDeg": 139.3807389014353,
+      "altitudeDeg": 44.9942724604808,
+      "enu": [
+        0.46039333680712413,
+        -0.5367848170781139,
+        0.7070360921325147
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 62434,
+      "proper": "Mimosa",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 191.930385,
+      "sourceDecDeg": -59.688764,
+      "pmRaCosDecMasYr": -48.24,
+      "pmDecMasYr": -12.82,
+      "propagatedIcrsRaDeg": 191.9303807111446,
+      "propagatedIcrsDecDeg": -59.688764575244825,
+      "azimuthDeg": 142.68137451081012,
+      "altitudeDeg": 42.61596872386493,
+      "enu": [
+        0.44614223383104523,
+        -0.5852506241159614,
+        0.6770810986611003
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 62956,
+      "proper": "Alioth",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 193.50708,
+      "sourceDecDeg": 55.959821,
+      "pmRaCosDecMasYr": 111.74,
+      "pmDecMasYr": -8.99,
+      "propagatedIcrsRaDeg": 193.50708895695905,
+      "propagatedIcrsDecDeg": 55.95982059661031,
+      "azimuthDeg": 31.271637278689507,
+      "altitudeDeg": -14.81903574822948,
+      "enu": [
+        0.501830140384795,
+        0.8262867380529102,
+        -0.25576695783321624
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 65378,
+      "proper": "Mizar",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 200.981205,
+      "sourceDecDeg": 54.925362,
+      "pmRaCosDecMasYr": 121.23,
+      "pmDecMasYr": -22.01,
+      "propagatedIcrsRaDeg": 200.98121446622218,
+      "propagatedIcrsDecDeg": 54.92536101239118,
+      "azimuthDeg": 34.78918774333084,
+      "altitudeDeg": -17.578712871398317,
+      "enu": [
+        0.5439151906916612,
+        0.7829066124798642,
+        -0.3020157305011739
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 67301,
+      "proper": "Alkaid",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2000-02-29T12:00:00Z",
+      "sourceRaDeg": 206.88531,
+      "sourceDecDeg": 49.313265,
+      "pmRaCosDecMasYr": -121.23,
+      "pmDecMasYr": -15.56,
+      "propagatedIcrsRaDeg": 206.88530165591646,
+      "propagatedIcrsDecDeg": 49.31326430180854,
+      "azimuthDeg": 41.791635159685974,
+      "altitudeDeg": -17.542420217441602,
+      "enu": [
+        0.6354309675799195,
+        0.7108997105932331,
+        -0.3014118227921805
+      ],
+      "dut1Seconds": 0.3038615,
+      "iersStatus": 0,
+      "polarMotionUsedArcsec": [
+        0.066425,
+        0.36169
+      ],
+      "taiMinusUtcSeconds": 31.999999999998607,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 746,
+      "proper": "Caph",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 2.293305,
+      "sourceDecDeg": 59.14978,
+      "pmRaCosDecMasYr": 523.39,
+      "pmDecMasYr": -180.42,
+      "propagatedIcrsRaDeg": 2.3009078402581085,
+      "propagatedIcrsDecDeg": 59.14843578671319,
+      "azimuthDeg": 358.2495718570547,
+      "altitudeDeg": -3.2143938608860108,
+      "enu": [
+        -0.030497924514432614,
+        0.9979608059482341,
+        -0.05607233178193284
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 3179,
+      "proper": "Schedar",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 10.126740000000002,
+      "sourceDecDeg": 56.537331,
+      "pmRaCosDecMasYr": 50.36,
+      "pmDecMasYr": -32.17,
+      "propagatedIcrsRaDeg": 10.127420351021819,
+      "propagatedIcrsDecDeg": 56.53709135621037,
+      "azimuthDeg": 2.4324691008481905,
+      "altitudeDeg": -0.6351908469946876,
+      "enu": [
+        0.04243923451161208,
+        0.9990375434421911,
+        -0.01108594457231844
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 4427,
+      "proper": "Cih",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 14.177145,
+      "sourceDecDeg": 60.71674,
+      "pmRaCosDecMasYr": 25.65,
+      "pmDecMasYr": -3.82,
+      "propagatedIcrsRaDeg": 14.177535639837206,
+      "propagatedIcrsDecDeg": 60.716711543349234,
+      "azimuthDeg": 4.146805920889881,
+      "altitudeDeg": -4.990078781991629,
+      "enu": [
+        0.07203816744816217,
+        0.9936017401179075,
+        -0.08698324244000528
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 6686,
+      "proper": "Ruchbah",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 21.453239999999997,
+      "sourceDecDeg": 60.235283,
+      "pmRaCosDecMasYr": 297.24,
+      "pmDecMasYr": -49.49,
+      "propagatedIcrsRaDeg": 21.45770013282677,
+      "propagatedIcrsDecDeg": 60.23491426248447,
+      "azimuthDeg": 7.77571219029464,
+      "altitudeDeg": -5.1398854461379715,
+      "enu": [
+        0.13475154862621497,
+        0.9868211959660866,
+        -0.08958765168760172
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 8886,
+      "proper": "Segin",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 28.598760000000002,
+      "sourceDecDeg": 63.670101,
+      "pmRaCosDecMasYr": 31.98,
+      "pmDecMasYr": -18.66,
+      "propagatedIcrsRaDeg": 28.599297101440836,
+      "propagatedIcrsDecDeg": 63.669961996250045,
+      "azimuthDeg": 10.073131777449406,
+      "altitudeDeg": -9.36277823985271,
+      "enu": [
+        0.17257496001212444,
+        0.9714687185255919,
+        -0.1626850088454923
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 24436,
+      "proper": "Rigel",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 78.63447,
+      "sourceDecDeg": -8.20164,
+      "pmRaCosDecMasYr": 1.87,
+      "pmDecMasYr": -0.56,
+      "propagatedIcrsRaDeg": 78.63448407401899,
+      "propagatedIcrsDecDeg": -8.201644171572081,
+      "azimuthDeg": 87.30887398288445,
+      "altitudeDeg": 18.73465957943086,
+      "enu": [
+        0.9459717496290716,
+        0.04446405819144755,
+        0.3211859219095081
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 25336,
+      "proper": "Bellatrix",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 81.282765,
+      "sourceDecDeg": 6.349702,
+      "pmRaCosDecMasYr": -8.75,
+      "pmDecMasYr": -13.28,
+      "propagatedIcrsRaDeg": 81.2826994168681,
+      "propagatedIcrsDecDeg": 6.349603074137914,
+      "azimuthDeg": 76.54253420283119,
+      "altitudeDeg": 8.272118436661149,
+      "enu": [
+        0.9624245379672658,
+        0.2303021756723839,
+        0.1438746558607925
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 25930,
+      "proper": "Mintaka",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 83.001675,
+      "sourceDecDeg": -0.299092,
+      "pmRaCosDecMasYr": 1.67,
+      "pmDecMasYr": 0.56,
+      "propagatedIcrsRaDeg": 83.00168744039411,
+      "propagatedIcrsDecDeg": -0.2990878284276693,
+      "azimuthDeg": 83.05244153227561,
+      "altitudeDeg": 10.70574850692425,
+      "enu": [
+        0.9753792499157009,
+        0.11885541287370861,
+        0.18576520035923003
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 26207,
+      "proper": "Meissa",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 83.78449499999999,
+      "sourceDecDeg": 9.934158,
+      "pmRaCosDecMasYr": -1.03,
+      "pmDecMasYr": -1.86,
+      "propagatedIcrsRaDeg": 83.7844872104962,
+      "propagatedIcrsDecDeg": 9.934144144420404,
+      "azimuthDeg": 75.06972737593833,
+      "altitudeDeg": 4.169112917405129,
+      "enu": [
+        0.9636832352108919,
+        0.2569615764580144,
+        0.07270055293930569
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 26311,
+      "proper": "Alnilam",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 84.05338499999999,
+      "sourceDecDeg": -1.20192,
+      "pmRaCosDecMasYr": 1.49,
+      "pmDecMasYr": -1.06,
+      "propagatedIcrsRaDeg": 84.05339610180471,
+      "propagatedIcrsDecDeg": -1.2019278961904474,
+      "azimuthDeg": 84.41509873075518,
+      "altitudeDeg": 10.350928744079036,
+      "enu": [
+        0.9790560500147406,
+        0.09573680795792912,
+        0.1796766944585753
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 26727,
+      "proper": "Alnitak",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 85.189695,
+      "sourceDecDeg": -1.942572,
+      "pmRaCosDecMasYr": 3.99,
+      "pmDecMasYr": 2.54,
+      "propagatedIcrsRaDeg": 85.18972473954364,
+      "propagatedIcrsDecDeg": -1.942553078939556,
+      "azimuthDeg": 85.68666446752424,
+      "altitudeDeg": 9.83008022636931,
+      "enu": [
+        0.9825276415109406,
+        0.07410660364717259,
+        0.17072681383669477
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 27366,
+      "proper": "Saiph",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 86.939115,
+      "sourceDecDeg": -9.669605,
+      "pmRaCosDecMasYr": 1.55,
+      "pmDecMasYr": -1.2,
+      "propagatedIcrsRaDeg": 86.93912671272258,
+      "propagatedIcrsDecDeg": -9.669613939083357,
+      "azimuthDeg": 93.23158642264276,
+      "altitudeDeg": 12.654309603073997,
+      "enu": [
+        0.9741580141502638,
+        -0.055002624548786454,
+        0.2190681965953969
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 27989,
+      "proper": "Betelgeuse",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 88.792935,
+      "sourceDecDeg": 7.407063,
+      "pmRaCosDecMasYr": 27.33,
+      "pmDecMasYr": 10.86,
+      "propagatedIcrsRaDeg": 88.79314030084373,
+      "propagatedIcrsDecDeg": 7.407143898659114,
+      "azimuthDeg": 79.98891129978884,
+      "altitudeDeg": 1.5692592697121568,
+      "enu": [
+        0.9844047899976003,
+        0.1737735706170017,
+        0.02738531695632289
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 53910,
+      "proper": "Merak",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 165.46015500000001,
+      "sourceDecDeg": 56.382427,
+      "pmRaCosDecMasYr": 81.66,
+      "pmDecMasYr": 33.74,
+      "propagatedIcrsRaDeg": 165.46125373017443,
+      "propagatedIcrsDecDeg": 56.382678332375406,
+      "azimuthDeg": 25.6811927349274,
+      "altitudeDeg": -63.676743283080185,
+      "enu": [
+        0.19216846675962648,
+        0.3996322289850005,
+        -0.8963065111554944
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 54061,
+      "proper": "Dubhe",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 165.93232500000002,
+      "sourceDecDeg": 61.751033,
+      "pmRaCosDecMasYr": -136.46,
+      "pmDecMasYr": -35.25,
+      "propagatedIcrsRaDeg": 165.9301773009007,
+      "propagatedIcrsDecDeg": 61.75077039763795,
+      "azimuthDeg": 18.47563152990056,
+      "altitudeDeg": -59.529791441231254,
+      "enu": [
+        0.1606975678721731,
+        0.4809541002538272,
+        -0.8618929429627556
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 58001,
+      "proper": "Phecda",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 178.45752000000002,
+      "sourceDecDeg": 53.69476,
+      "pmRaCosDecMasYr": 107.76,
+      "pmDecMasYr": 11.16,
+      "propagatedIcrsRaDeg": 178.45887576603948,
+      "propagatedIcrsDecDeg": 53.69484312582337,
+      "azimuthDeg": 12.515392477134554,
+      "altitudeDeg": -69.65905710402038,
+      "enu": [
+        0.07532682589737459,
+        0.3393458985368416,
+        -0.9376407790014523
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 59747,
+      "proper": "Imai",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 183.786405,
+      "sourceDecDeg": -58.748928,
+      "pmRaCosDecMasYr": -36.68,
+      "pmDecMasYr": -10.72,
+      "propagatedIcrsRaDeg": 183.78587831481332,
+      "propagatedIcrsDecDeg": -58.7490078547394,
+      "azimuthDeg": 178.99078683527645,
+      "altitudeDeg": 2.7786530076349822,
+      "enu": [
+        0.017592473401994213,
+        -0.9986693265018517,
+        0.048477635915319985
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 59774,
+      "proper": "Megrez",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 183.85629,
+      "sourceDecDeg": 57.032617,
+      "pmRaCosDecMasYr": 103.56,
+      "pmDecMasYr": 7.81,
+      "propagatedIcrsRaDeg": 183.8577076748979,
+      "propagatedIcrsDecDeg": 57.03267517052826,
+      "azimuthDeg": 2.6600540099450756,
+      "altitudeDeg": -66.95074870244976,
+      "enu": [
+        0.018170556996174553,
+        0.3911003722382878,
+        -0.9201686419855447
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 60260,
+      "proper": "Ginan",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 185.340465,
+      "sourceDecDeg": -60.401147,
+      "pmRaCosDecMasYr": -171.06,
+      "pmDecMasYr": 91.82,
+      "propagatedIcrsRaDeg": 185.337885173157,
+      "propagatedIcrsDecDeg": -60.40046298617962,
+      "azimuthDeg": 179.80665955368062,
+      "altitudeDeg": 4.4162225882891235,
+      "enu": [
+        0.003364402272756754,
+        -0.997025313751092,
+        0.07700132815012585
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 60718,
+      "proper": "Acrux",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 186.649665,
+      "sourceDecDeg": -63.099092,
+      "pmRaCosDecMasYr": -35.37,
+      "pmDecMasYr": -14.73,
+      "propagatedIcrsRaDeg": 186.6490826568537,
+      "propagatedIcrsDecDeg": -63.099201726056506,
+      "azimuthDeg": 180.42077910097245,
+      "altitudeDeg": 7.117032802247347,
+      "enu": [
+        -0.00728733095912798,
+        -0.9922683908491173,
+        0.12389647020474556
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 61084,
+      "proper": "Gacrux",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 187.791435,
+      "sourceDecDeg": -57.113212,
+      "pmRaCosDecMasYr": 27.94,
+      "pmDecMasYr": -264.33,
+      "propagatedIcrsRaDeg": 187.79181833347144,
+      "propagatedIcrsDecDeg": -57.11518105604368,
+      "azimuthDeg": 181.11945461252907,
+      "altitudeDeg": 1.1466770569775202,
+      "enu": [
+        -0.019533013306196407,
+        -0.9996089150677279,
+        0.020011954134971217
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 62434,
+      "proper": "Mimosa",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 191.930385,
+      "sourceDecDeg": -59.688764,
+      "pmRaCosDecMasYr": -48.24,
+      "pmDecMasYr": -12.82,
+      "propagatedIcrsRaDeg": 191.92967298421073,
+      "propagatedIcrsDecDeg": -59.68885949728166,
+      "azimuthDeg": 183.13221058570392,
+      "altitudeDeg": 3.84355091543111,
+      "enu": [
+        -0.054517266137131704,
+        -0.9962602753196783,
+        0.06703231692916595
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 62956,
+      "proper": "Alioth",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 193.50708,
+      "sourceDecDeg": 55.959821,
+      "pmRaCosDecMasYr": 111.74,
+      "pmDecMasYr": -8.99,
+      "propagatedIcrsRaDeg": 193.50856698586315,
+      "propagatedIcrsDecDeg": 55.95975402241532,
+      "azimuthDeg": 348.6811337293267,
+      "altitudeDeg": -67.41858873018019,
+      "enu": [
+        -0.07536647909848944,
+        0.37652709566714593,
+        -0.9233348472015778
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 65378,
+      "proper": "Mizar",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 200.981205,
+      "sourceDecDeg": 54.925362,
+      "pmRaCosDecMasYr": 121.23,
+      "pmDecMasYr": -22.01,
+      "propagatedIcrsRaDeg": 200.98277652731338,
+      "propagatedIcrsDecDeg": 54.92519803217339,
+      "azimuthDeg": 337.7289706463368,
+      "altitudeDeg": -66.55621869211436,
+      "enu": [
+        -0.1507801353604011,
+        0.3681701001177235,
+        -0.9174508859661125
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 67301,
+      "proper": "Alkaid",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2026-10-26T12:00:00Z",
+      "sourceRaDeg": 206.88531,
+      "sourceDecDeg": 49.313265,
+      "pmRaCosDecMasYr": -121.23,
+      "pmDecMasYr": -15.56,
+      "propagatedIcrsRaDeg": 206.88392476128615,
+      "propagatedIcrsDecDeg": 49.31314908160529,
+      "azimuthDeg": 320.8383679792008,
+      "altitudeDeg": -68.16629897754511,
+      "enu": [
+        -0.23486742985534492,
+        0.2883699708120031,
+        -0.9282672300189365
+      ],
+      "dut1Seconds": -0.049594349999999995,
+      "iersStatus": 2,
+      "polarMotionUsedArcsec": [
+        0.149422,
+        0.322278
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\""
+      ]
+    },
+    {
+      "hip": 746,
+      "proper": "Caph",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 2.293305,
+      "sourceDecDeg": 59.14978,
+      "pmRaCosDecMasYr": 523.39,
+      "pmDecMasYr": -180.42,
+      "propagatedIcrsRaDeg": 2.3076129015704168,
+      "propagatedIcrsDecDeg": 59.14724984818786,
+      "azimuthDeg": 37.39026089563656,
+      "altitudeDeg": -44.6609629205938,
+      "enu": [
+        0.4319173532367676,
+        0.5651235043489775,
+        -0.7029102537346261
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 3179,
+      "proper": "Schedar",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 10.126740000000002,
+      "sourceDecDeg": 56.537331,
+      "pmRaCosDecMasYr": 50.36,
+      "pmDecMasYr": -32.17,
+      "propagatedIcrsRaDeg": 10.128020400230463,
+      "propagatedIcrsDecDeg": 56.53687999196958,
+      "azimuthDeg": 40.100189672361395,
+      "altitudeDeg": -49.20813108154238,
+      "enu": [
+        0.42081610417286447,
+        0.49973183148018335,
+        -0.7570877776547674
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 4427,
+      "proper": "Cih",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 14.177145,
+      "sourceDecDeg": 60.71674,
+      "pmRaCosDecMasYr": 25.65,
+      "pmDecMasYr": -3.82,
+      "propagatedIcrsRaDeg": 14.177880175993685,
+      "propagatedIcrsDecDeg": 60.716686444194295,
+      "azimuthDeg": 32.987427066971506,
+      "altitudeDeg": -50.0318088225122,
+      "enu": [
+        0.34973731641432576,
+        0.5388070525544567,
+        -0.7664011805998766
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 6686,
+      "proper": "Ruchbah",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 21.453239999999997,
+      "sourceDecDeg": 60.235283,
+      "pmRaCosDecMasYr": 297.24,
+      "pmDecMasYr": -49.49,
+      "propagatedIcrsRaDeg": 21.461633799806236,
+      "propagatedIcrsDecDeg": 60.23458891900124,
+      "azimuthDeg": 31.24716158896586,
+      "altitudeDeg": -53.48764970562768,
+      "enu": [
+        0.3086428382030166,
+        0.5086844741970108,
+        -0.8037286259284891
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 8886,
+      "proper": "Segin",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 28.598760000000002,
+      "sourceDecDeg": 63.670101,
+      "pmRaCosDecMasYr": 31.98,
+      "pmDecMasYr": -18.66,
+      "propagatedIcrsRaDeg": 28.599770810083882,
+      "propagatedIcrsDecDeg": 63.66983939598786,
+      "azimuthDeg": 23.21045600359014,
+      "altitudeDeg": -54.25366363909093,
+      "enu": [
+        0.2302379715427319,
+        0.5369148082406897,
+        -0.8116113387279354
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 24436,
+      "proper": "Rigel",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 78.63447,
+      "sourceDecDeg": -8.20164,
+      "pmRaCosDecMasYr": 1.87,
+      "pmDecMasYr": -0.56,
+      "propagatedIcrsRaDeg": 78.63449648702998,
+      "propagatedIcrsDecDeg": -8.201647850817032,
+      "azimuthDeg": 205.6493282747361,
+      "altitudeDeg": -44.59337982946721,
+      "enu": [
+        -0.3082441433563261,
+        -0.6419362667576632,
+        -0.7020707781326316
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 25336,
+      "proper": "Bellatrix",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 81.282765,
+      "sourceDecDeg": 6.349702,
+      "pmRaCosDecMasYr": -8.75,
+      "pmDecMasYr": -13.28,
+      "propagatedIcrsRaDeg": 81.28264157384356,
+      "propagatedIcrsDecDeg": 6.349515823446767,
+      "azimuthDeg": 219.77634339545773,
+      "altitudeDeg": -56.415815498578354,
+      "enu": [
+        -0.3539086146632746,
+        -0.42513111456198116,
+        -0.8330739630419435
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 25930,
+      "proper": "Mintaka",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 83.001675,
+      "sourceDecDeg": -0.299092,
+      "pmRaCosDecMasYr": 1.67,
+      "pmDecMasYr": 0.56,
+      "propagatedIcrsRaDeg": 83.00169841257949,
+      "propagatedIcrsDecDeg": -0.2990841491820814,
+      "azimuthDeg": 216.48147627501575,
+      "altitudeDeg": -49.83816777563353,
+      "enu": [
+        -0.38346257261482314,
+        -0.5185704693473343,
+        -0.7642258329345502
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 26207,
+      "proper": "Meissa",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 83.78449499999999,
+      "sourceDecDeg": 9.934158,
+      "pmRaCosDecMasYr": -1.03,
+      "pmDecMasYr": -1.86,
+      "propagatedIcrsRaDeg": 83.78448034030605,
+      "propagatedIcrsDecDeg": 9.934131924068822,
+      "azimuthDeg": 227.33962116606259,
+      "altitudeDeg": -57.89128877179586,
+      "enu": [
+        -0.39087639364495513,
+        -0.36019021277957075,
+        -0.8470411179564553
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 26311,
+      "proper": "Alnilam",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 84.05338499999999,
+      "sourceDecDeg": -1.20192,
+      "pmRaCosDecMasYr": 1.49,
+      "pmDecMasYr": -1.06,
+      "propagatedIcrsRaDeg": 84.05340589338036,
+      "propagatedIcrsDecDeg": -1.2019348604766478,
+      "azimuthDeg": 217.1794811026958,
+      "altitudeDeg": -48.529400996391935,
+      "enu": [
+        -0.4001981492073304,
+        -0.5276338527394724,
+        -0.7492956417958989
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 26727,
+      "proper": "Alnitak",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 85.189695,
+      "sourceDecDeg": -1.942572,
+      "pmRaCosDecMasYr": 3.99,
+      "pmDecMasYr": 2.54,
+      "propagatedIcrsRaDeg": 85.18975096924154,
+      "propagatedIcrsDecDeg": -1.942536390932199,
+      "azimuthDeg": 218.07107999915246,
+      "altitudeDeg": -47.31210939473144,
+      "enu": [
+        -0.41808363608451965,
+        -0.5337564487987523,
+        -0.7350579069733839
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 27366,
+      "proper": "Saiph",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 86.939115,
+      "sourceDecDeg": -9.669605,
+      "pmRaCosDecMasYr": 1.55,
+      "pmDecMasYr": -1.2,
+      "propagatedIcrsRaDeg": 86.93913704311636,
+      "propagatedIcrsDecDeg": -9.669621823180501,
+      "azimuthDeg": 214.81364860468642,
+      "altitudeDeg": -39.75004075680373,
+      "enu": [
+        -0.43893858482368053,
+        -0.6312289458429561,
+        -0.6394395488886928
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 27989,
+      "proper": "Betelgeuse",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 88.792935,
+      "sourceDecDeg": 7.407063,
+      "pmRaCosDecMasYr": 27.33,
+      "pmDecMasYr": 10.86,
+      "propagatedIcrsRaDeg": 88.79332137225329,
+      "propagatedIcrsDecDeg": 7.407215249623321,
+      "azimuthDeg": 231.18542588181518,
+      "altitudeDeg": -52.77872480176577,
+      "enu": [
+        -0.47132108794457106,
+        -0.37914931425004483,
+        -0.7963053620078585
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 53910,
+      "proper": "Merak",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 165.46015500000001,
+      "sourceDecDeg": 56.382427,
+      "pmRaCosDecMasYr": 81.66,
+      "pmDecMasYr": 33.74,
+      "propagatedIcrsRaDeg": 165.462222800829,
+      "propagatedIcrsDecDeg": 56.382899994574856,
+      "azimuthDeg": 325.05513571166335,
+      "altitudeDeg": -19.99391421574085,
+      "enu": [
+        -0.5382653693682065,
+        0.7702992145974488,
+        -0.3419203300908878
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 54061,
+      "proper": "Dubhe",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 165.93232500000002,
+      "sourceDecDeg": 61.751033,
+      "pmRaCosDecMasYr": -136.46,
+      "pmDecMasYr": -35.25,
+      "propagatedIcrsRaDeg": 165.92828310252224,
+      "propagatedIcrsDecDeg": 61.75053875961082,
+      "azimuthDeg": 330.1427024038332,
+      "altitudeDeg": -22.523350255314472,
+      "enu": [
+        -0.45986789648648313,
+        0.8011158577194526,
+        -0.3830599173647941
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 58001,
+      "proper": "Phecda",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 178.45752000000002,
+      "sourceDecDeg": 53.69476,
+      "pmRaCosDecMasYr": 107.76,
+      "pmDecMasYr": 11.16,
+      "propagatedIcrsRaDeg": 178.46007152973291,
+      "propagatedIcrsDecDeg": 53.69491642847697,
+      "azimuthDeg": 327.4027173978589,
+      "altitudeDeg": -12.417602809419424,
+      "enu": [
+        -0.5261278998820638,
+        0.8227692383403767,
+        -0.21503537710452533
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 59747,
+      "proper": "Imai",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 183.786405,
+      "sourceDecDeg": -58.748928,
+      "pmRaCosDecMasYr": -36.68,
+      "pmDecMasYr": -10.72,
+      "propagatedIcrsRaDeg": 183.78541378672534,
+      "propagatedIcrsDecDeg": -58.74907828328271,
+      "azimuthDeg": 217.7830952100544,
+      "altitudeDeg": 45.47097681439734,
+      "enu": [
+        -0.4296501121160534,
+        -0.5542391679858896,
+        0.7128953119701177
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 59774,
+      "proper": "Megrez",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 183.85629,
+      "sourceDecDeg": 57.032617,
+      "pmRaCosDecMasYr": 103.56,
+      "pmDecMasYr": 7.81,
+      "propagatedIcrsRaDeg": 183.85895804023875,
+      "propagatedIcrsDecDeg": 57.03272646251067,
+      "azimuthDeg": 332.0430622066444,
+      "altitudeDeg": -12.453965129808022,
+      "enu": [
+        -0.4577765877185258,
+        0.8625157743113642,
+        -0.21565512931727496
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 60260,
+      "proper": "Ginan",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 185.340465,
+      "sourceDecDeg": -60.401147,
+      "pmRaCosDecMasYr": -171.06,
+      "pmDecMasYr": 91.82,
+      "propagatedIcrsRaDeg": 185.3356099061066,
+      "propagatedIcrsDecDeg": -60.39985965790603,
+      "azimuthDeg": 215.25797116959188,
+      "altitudeDeg": 45.953392409849435,
+      "enu": [
+        -0.40133530706494364,
+        -0.5677087334679247,
+        0.7187744884505377
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 60718,
+      "proper": "Acrux",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 186.649665,
+      "sourceDecDeg": -63.099092,
+      "pmRaCosDecMasYr": -35.37,
+      "pmDecMasYr": -14.73,
+      "propagatedIcrsRaDeg": 186.64856903788817,
+      "propagatedIcrsDecDeg": -63.09929850031995,
+      "azimuthDeg": 211.2749496654797,
+      "altitudeDeg": 45.91699537352258,
+      "enu": [
+        -0.36116938398389214,
+        -0.5946047598664288,
+        0.7183326914577134
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 61084,
+      "proper": "Gacrux",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 187.791435,
+      "sourceDecDeg": -57.113212,
+      "pmRaCosDecMasYr": 27.94,
+      "pmDecMasYr": -264.33,
+      "propagatedIcrsRaDeg": 187.7921564599514,
+      "propagatedIcrsDecDeg": -57.116917724162846,
+      "azimuthDeg": 219.60974779754088,
+      "altitudeDeg": 47.84055233772028,
+      "enu": [
+        -0.427924476062497,
+        -0.5170926881369816,
+        0.7412798355964553
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 62434,
+      "proper": "Mimosa",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 191.930385,
+      "sourceDecDeg": -59.688764,
+      "pmRaCosDecMasYr": -48.24,
+      "pmDecMasYr": -12.82,
+      "propagatedIcrsRaDeg": 191.92904499677806,
+      "propagatedIcrsDecDeg": -59.68894372082521,
+      "azimuthDeg": 215.04231292836678,
+      "altitudeDeg": 49.31705347838667,
+      "enu": [
+        -0.3742930784953208,
+        -0.533706604914976,
+        0.7583283927564795
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 62956,
+      "proper": "Alioth",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 193.50708,
+      "sourceDecDeg": 55.959821,
+      "pmRaCosDecMasYr": 111.74,
+      "pmDecMasYr": -8.99,
+      "propagatedIcrsRaDeg": 193.5098784741711,
+      "propagatedIcrsDecDeg": 55.95969493463322,
+      "azimuthDeg": 335.3762020603229,
+      "altitudeDeg": -8.12600783628304,
+      "enu": [
+        -0.4124749916060429,
+        0.8999357677000931,
+        -0.14135061129559737
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 65378,
+      "proper": "Mizar",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 200.981205,
+      "sourceDecDeg": 54.925362,
+      "pmRaCosDecMasYr": 121.23,
+      "pmDecMasYr": -22.01,
+      "propagatedIcrsRaDeg": 200.98416257317373,
+      "propagatedIcrsDecDeg": 54.92505339891884,
+      "azimuthDeg": 338.283514132231,
+      "altitudeDeg": -4.857301265405055,
+      "enu": [
+        -0.36868524295769073,
+        0.9256897100934307,
+        -0.08467438958958426
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    },
+    {
+      "hip": 67301,
+      "proper": "Alkaid",
+      "site": {
+        "id": "sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "elevationMeters": 0
+      },
+      "instantUtc": "2050-06-21T12:00:00Z",
+      "sourceRaDeg": 206.88531,
+      "sourceDecDeg": 49.313265,
+      "pmRaCosDecMasYr": -121.23,
+      "pmDecMasYr": -15.56,
+      "propagatedIcrsRaDeg": 206.88270301312258,
+      "propagatedIcrsDecDeg": 49.31304683009775,
+      "azimuthDeg": 338.66597416180025,
+      "altitudeDeg": 1.8061459344816084,
+      "enu": [
+        -0.3636237198360908,
+        0.9310125712178509,
+        0.03151797275984315
+      ],
+      "dut1Seconds": -0.1789191,
+      "iersStatus": -2,
+      "polarMotionUsedArcsec": [
+        0.035,
+        0.29
+      ],
+      "taiMinusUtcSeconds": 37.000000000002586,
+      "warnings": [
+        "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+        "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+        "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+        "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+        "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+        "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+        "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+# Preserve byte-for-byte upstream legal/provenance inputs and their SHA256.
+docs/dependencies/poms/*.pom -text -whitespace
+android/app/src/main/assets/licenses/CC-BY-4.0.txt -text -whitespace
+android/app/src/main/assets/licenses/embedded/*.txt -text -whitespace

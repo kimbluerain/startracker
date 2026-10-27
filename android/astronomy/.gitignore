@@ -1,0 +1,6 @@
+.vscode
+.vs
+.idea
+__pycache__
+.mypy_cache
+bin/

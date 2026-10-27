@@ -1,0 +1,5 @@
+# Preserve upstream scientific bytes/hash, including fixed-width table padding.
+iers-finals2000A-2026-10-19.all -text -diff
+# Retained raw ERFA source/test contain their original whitespace.
+erfa-g2icrs-source.c.txt -text whitespace=-blank-at-eol
+erfa-g2icrs-published-test.txt -text whitespace=-blank-at-eof

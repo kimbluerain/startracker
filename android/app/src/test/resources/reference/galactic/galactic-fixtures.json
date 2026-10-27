@@ -1,0 +1,118 @@
+{
+  "metadata": {
+    "source": "ERFA v2.0.1 eraG2icrs, derived from IAU SOFA/Hipparcos canonical angles",
+    "sourceUrl": "https://raw.githubusercontent.com/liberfa/erfa/v2.0.1/src/g2icrs.c",
+    "testSourceUrl": "https://raw.githubusercontent.com/liberfa/erfa/v2.0.1/src/t_erfa_c.c",
+    "algorithm": "Python standard-library math only: Galactic spherical -> unit vector; transpose of ICRS-to-Galactic matrix; atan2 back to ICRS RA/DEC",
+    "validation": "(320 deg,-45 deg) matches ERFA published test radians to <1e-14",
+    "frame": "ICRS; fixed reference directions, not equator/equinox of observation date",
+    "physicalCenterWarning": "l=0,b=0 is the coordinate origin direction, not exact radio position of Sagittarius A*"
+  },
+  "icrsToGalacticMatrix": [
+    [
+      -0.05487556041621537,
+      -0.873437090234885,
+      -0.4838350155487132
+    ],
+    [
+      0.49410942787558365,
+      -0.4448296299600112,
+      0.7469822444972188
+    ],
+    [
+      -0.8676661490190047,
+      -0.19807637343120152,
+      0.4559837761750669
+    ]
+  ],
+  "fixtures": [
+    {
+      "galacticLongitudeDeg": 0,
+      "galacticLatitudeDeg": 0,
+      "icrsRaDeg": 266.4049948010461,
+      "icrsDecDeg": -28.936173960138692,
+      "icrsUnitVector": [
+        -0.05487556041621537,
+        -0.873437090234885,
+        -0.4838350155487132
+      ]
+    },
+    {
+      "galacticLongitudeDeg": 90,
+      "galacticLatitudeDeg": 0,
+      "icrsRaDeg": 318.0043868150281,
+      "icrsDecDeg": 48.32964242159669,
+      "icrsUnitVector": [
+        0.49410942787558365,
+        -0.44482962996001124,
+        0.7469822444972188
+      ]
+    },
+    {
+      "galacticLongitudeDeg": 180,
+      "galacticLatitudeDeg": 0,
+      "icrsRaDeg": 86.40499480104609,
+      "icrsDecDeg": 28.9361739601387,
+      "icrsUnitVector": [
+        0.054875560416215434,
+        0.873437090234885,
+        0.48383501554871333
+      ]
+    },
+    {
+      "galacticLongitudeDeg": 270,
+      "galacticLatitudeDeg": 0,
+      "icrsRaDeg": 138.00438681502814,
+      "icrsDecDeg": -48.32964242159668,
+      "icrsUnitVector": [
+        -0.49410942787558365,
+        0.44482962996001135,
+        -0.7469822444972187
+      ]
+    },
+    {
+      "galacticLongitudeDeg": 0,
+      "galacticLatitudeDeg": 90,
+      "icrsRaDeg": 192.85948,
+      "icrsDecDeg": 27.128249999999998,
+      "icrsUnitVector": [
+        -0.8676661490190047,
+        -0.19807637343120157,
+        0.45598377617506686
+      ]
+    },
+    {
+      "galacticLongitudeDeg": 0,
+      "galacticLatitudeDeg": -90,
+      "icrsRaDeg": 12.859479999999996,
+      "icrsDecDeg": -27.12825,
+      "icrsUnitVector": [
+        0.8676661490190047,
+        0.19807637343120146,
+        -0.45598377617506697
+      ]
+    },
+    {
+      "galacticLongitudeDeg": 320,
+      "galacticLatitudeDeg": -45,
+      "icrsRaDeg": 339.98212219513056,
+      "icrsDecDeg": -67.52233482658798,
+      "icrsUnitVector": [
+        0.3592255274224049,
+        -0.1308743504672099,
+        -0.9240286385377245
+      ]
+    },
+    {
+      "galacticLongitudeDeg": 123,
+      "galacticLatitudeDeg": 12,
+      "icrsRaDeg": 13.114640484817517,
+      "icrsDecDeg": 74.8716150835087,
+      "icrsUnitVector": [
+        0.25417583412694106,
+        0.05921703881643743,
+        0.9653434558019681
+      ]
+    }
+  ]
+}

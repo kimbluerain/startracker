@@ -1,0 +1,21 @@
+{
+  ".gitattributes": "3c012699f64f0b49660926b41f46cd6c6b6783018dc3195a4faaecb93f41af3d",
+  "ASTROPY-LICENSE.rst": "1e79badb026dba4036780dbccda549ebc71bc1e3e6699083c2bb5ca5801cf838",
+  "README.md": "cf980909104780c27d3fa65c8c69a347471a6a7f6bed79c1108afc14fbfdf801",
+  "astropy-galactic-source.py.txt": "5a5f3d1e580df36f9137e0e815b53b379a15b895898acb0bc946dc1e7a090934",
+  "erfa-g2icrs-published-test.txt": "688d901e3496d2f09ea3214c9e12e0c2fdd4c091780d7dd600d408f8393d08b0",
+  "erfa-g2icrs-source.c.txt": "11e1c5e06d0c185b8d1d6a9c562158fde34b3378f3397e729b651d9464a8c679",
+  "erfa-leap-seconds.json": "9c95628292dd71164d5ab803c9890c1e885e23e38d2fd0402e51d6a5781a040a",
+  "galactic-altaz-fixtures.json": "9c80c534069e1a3d08b1e5906af657b1402b09822e4dbee85dfdb1b6441e7dba",
+  "galactic-altaz-generation-report.json": "e83db89b82a99388f164dd796238577e9cc5b73c265578864f92f7e5156dc907",
+  "galactic-altaz-reproduction-baseline.json": "89980f4138d5ba1c3971ee31fc9cc7a969639eb1fa3a83c3bb8e4a496d8478f5",
+  "galactic-altaz-requirements.txt": "1de223cabb1cfe01f552da6cb323b96163c0809acd810d3790bca307cdada9d5",
+  "galactic-fixtures.json": "fa11051d03615fa0fdd6aff4624527d748d08f378163c8eaf85684ad9d86aeb4",
+  "generate-galactic-altaz.py": "3c0d5275dd60eeda2d400a1e2c21996f6ba12c6b0811b75ea1e37e0e713ca652",
+  "generate-virtual-sky-reference.py": "c772d2d2c971c716cf134c63ccb3be0f845ce957c0a74b16fb161d87d8831947",
+  "iers-finals2000A-2026-10-19.all": "0baf00f67a39ab362a3e4f07d2a1f084842178523f56bcf5a861e7ac084d411a",
+  "simbad-sgr-a-radio-raw.json": "25a89c9174dc31a2d794f58097a7acbd3a9c1341f6411a4d07bef7a061f8b36e",
+  "simbad-sgr-a-request.json": "00f00f8bfd5dfe95a32883029b7417fe31ad1e91a0104be290dd5d4dd45a857f",
+  "virtual-sky-reference.json": "cf936f42918727039f9726559f9db2144e7294907034e4b82b97cf6926861130",
+  "virtual-sky-reviewed.svg": "c4a1e693a3e975099ff98dbd776de14d1941d36a20bfa9a29aa14b83bdd08f84"
+}

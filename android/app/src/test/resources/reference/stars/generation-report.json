@@ -1,0 +1,49 @@
+{
+  "rows": 150,
+  "metadata": {
+    "generatedUtc": "2026-10-26T01:18:11.750466+00:00",
+    "versions": {
+      "astropy": "7.2.0",
+      "pyerfa": "2.0.1.5",
+      "astropy-iers-data": "0.2026.10.19.0.52.1",
+      "numpy": "2.5.4",
+      "packaging": "26.3",
+      "PyYAML": "6.0.3"
+    },
+    "erfaVersion": "2.0.1",
+    "sofaVersion": "20231011",
+    "source": "Astropy SkyCoord.apply_space_motion / ICRS -> AltAz with ERFA; no production code or Astronomy Engine used",
+    "inputSha256": "6bc120de3163dca15d2cf49cf78bae688261cfa31ff05035800705dabd0a76ec",
+    "sourceEpoch": "J2000.0 TT",
+    "properMotion": "pm_ra_cosdec and pm_dec, milliarcseconds per Julian year",
+    "pressureHpa": 0,
+    "refraction": "disabled",
+    "distance": "Unit-spherical input; no physical distance, radial velocity, or finite-distance parallax. ERFA pmsafe may override a missing distance internally; those warnings are retained. This is an angular-proper-motion reference, not full physical space motion.",
+    "sites": "Synthetic WGS84 ellipsoid height 0m",
+    "iers": {
+      "tableFile": "iers-finals2000A-2026-10-19.all",
+      "sha256": "0baf00f67a39ab362a3e4f07d2a1f084842178523f56bcf5a861e7ac084d411a",
+      "sourceUrl": "https://datacenter.iers.org/data/9/finals2000A.all",
+      "autoDownload": false,
+      "statusMeaning": {
+        "0": "measured IERS B",
+        "1": "measured IERS A",
+        "2": "predicted IERS A",
+        "-1": "before table",
+        "-2": "beyond table"
+      },
+      "futurePolicy": "2050 outside table clips UT1-UTC to boundary; polar motion uses Astropy 50-year mean 0.035,0.29 arcsec; latest known leap seconds. Frozen model fixtures, not actual future UTC truth."
+    },
+    "suggestedAcceptance": "Spherical angular separation of ENU <=0.05 degrees; do not compare azimuth alone near zenith."
+  },
+  "warningMessages": [
+    "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+    "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+    "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+    "ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+    "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+    "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+    "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+    "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+  ]
+}

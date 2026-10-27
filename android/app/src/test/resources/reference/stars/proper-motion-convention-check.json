@@ -1,0 +1,206 @@
+{
+  "method": "Project HYG Cartesian velocity pc/year onto east=(-sinRA,cosRA,0) and north=(-sinDec*cosRA,-sinDec*sinRA,cosDec), divide by HYG distance pc and convert radians to mas. HYG README describes x,y,z and vx,vy,vz axes. Independent consistency check establishes pmra=mu_alpha*cosDec for these 25 rows; Cartesian values have finite decimal precision.",
+  "maxRaDifferenceMasYr": 0.08193218444330341,
+  "rows": [
+    {
+      "hip": 746,
+      "pmra": 523.39,
+      "pmRaCosDecFromVelocity": 523.3080678155567,
+      "differenceMasYr": -0.08193218444330341,
+      "pmdec": -180.42,
+      "pmDecFromVelocity": -180.42526105232602
+    },
+    {
+      "hip": 3179,
+      "pmra": 50.36,
+      "pmRaCosDecFromVelocity": 50.34866959103445,
+      "differenceMasYr": -0.0113304089655486,
+      "pmdec": -32.17,
+      "pmDecFromVelocity": -32.17023538641438
+    },
+    {
+      "hip": 4427,
+      "pmra": 25.65,
+      "pmRaCosDecFromVelocity": 25.64419166383355,
+      "differenceMasYr": -0.005808336166449379,
+      "pmdec": -3.82,
+      "pmDecFromVelocity": -3.814671533909871
+    },
+    {
+      "hip": 6686,
+      "pmra": 297.24,
+      "pmRaCosDecFromVelocity": 297.2457968464492,
+      "differenceMasYr": 0.0057968464491864324,
+      "pmdec": -49.49,
+      "pmDecFromVelocity": -49.492324353594285
+    },
+    {
+      "hip": 8886,
+      "pmra": 31.98,
+      "pmRaCosDecFromVelocity": 31.97974147776527,
+      "differenceMasYr": -0.0002585222347306626,
+      "pmdec": -18.66,
+      "pmDecFromVelocity": -18.65761666179783
+    },
+    {
+      "hip": 24436,
+      "pmra": 1.87,
+      "pmRaCosDecFromVelocity": 1.8677202717846049,
+      "differenceMasYr": -0.002279728215395238,
+      "pmdec": -0.56,
+      "pmDecFromVelocity": -0.5565751671703624
+    },
+    {
+      "hip": 25336,
+      "pmra": -8.75,
+      "pmRaCosDecFromVelocity": -8.74576339762372,
+      "differenceMasYr": 0.004236602376279208,
+      "pmdec": -13.28,
+      "pmDecFromVelocity": -13.288156126986872
+    },
+    {
+      "hip": 25930,
+      "pmra": 1.67,
+      "pmRaCosDecFromVelocity": 1.6675282134392266,
+      "differenceMasYr": -0.0024717865607732925,
+      "pmdec": 0.56,
+      "pmDecFromVelocity": 0.5590139988039566
+    },
+    {
+      "hip": 26207,
+      "pmra": -1.03,
+      "pmRaCosDecFromVelocity": -1.0320413270886941,
+      "differenceMasYr": -0.0020413270886940893,
+      "pmdec": -1.86,
+      "pmDecFromVelocity": -1.8590779029994091
+    },
+    {
+      "hip": 26311,
+      "pmra": 1.49,
+      "pmRaCosDecFromVelocity": 1.4910066008190943,
+      "differenceMasYr": 0.0010066008190943165,
+      "pmdec": -1.06,
+      "pmDecFromVelocity": -1.0594469916260794
+    },
+    {
+      "hip": 26727,
+      "pmra": 3.99,
+      "pmRaCosDecFromVelocity": 3.98927492580001,
+      "differenceMasYr": -0.0007250741999902388,
+      "pmdec": 2.54,
+      "pmDecFromVelocity": 2.536123105594709
+    },
+    {
+      "hip": 27366,
+      "pmra": 1.55,
+      "pmRaCosDecFromVelocity": 1.5514751348958402,
+      "differenceMasYr": 0.0014751348958401689,
+      "pmdec": -1.2,
+      "pmDecFromVelocity": -1.2043876140564542
+    },
+    {
+      "hip": 27989,
+      "pmra": 27.33,
+      "pmRaCosDecFromVelocity": 27.333101567897856,
+      "differenceMasYr": 0.003101567897857649,
+      "pmdec": 10.86,
+      "pmDecFromVelocity": 10.860584851332934
+    },
+    {
+      "hip": 53910,
+      "pmra": 81.66,
+      "pmRaCosDecFromVelocity": 81.64829275317783,
+      "differenceMasYr": -0.011707246822169282,
+      "pmdec": 33.74,
+      "pmDecFromVelocity": 33.71173168282662
+    },
+    {
+      "hip": 54061,
+      "pmra": -136.46,
+      "pmRaCosDecFromVelocity": -136.45749082025267,
+      "differenceMasYr": 0.0025091797473351107,
+      "pmdec": -35.25,
+      "pmDecFromVelocity": -35.27369837813102
+    },
+    {
+      "hip": 58001,
+      "pmra": 107.76,
+      "pmRaCosDecFromVelocity": 107.75208374392754,
+      "differenceMasYr": -0.007916256072462602,
+      "pmdec": 11.16,
+      "pmDecFromVelocity": 11.13352493926142
+    },
+    {
+      "hip": 59747,
+      "pmra": -36.68,
+      "pmRaCosDecFromVelocity": -36.667495190486775,
+      "differenceMasYr": 0.012504809513224302,
+      "pmdec": -10.72,
+      "pmDecFromVelocity": -10.71838290626651
+    },
+    {
+      "hip": 59774,
+      "pmra": 103.56,
+      "pmRaCosDecFromVelocity": 103.54963482396302,
+      "differenceMasYr": -0.01036517603698428,
+      "pmdec": 7.81,
+      "pmDecFromVelocity": 7.831364771130805
+    },
+    {
+      "hip": 60260,
+      "pmra": -171.06,
+      "pmRaCosDecFromVelocity": -171.0393089912599,
+      "differenceMasYr": 0.020691008740101324,
+      "pmdec": 91.82,
+      "pmDecFromVelocity": 91.81018509335436
+    },
+    {
+      "hip": 60718,
+      "pmra": -35.37,
+      "pmRaCosDecFromVelocity": -35.36723934219061,
+      "differenceMasYr": 0.0027606578093894996,
+      "pmdec": -14.73,
+      "pmDecFromVelocity": -14.732341915225142
+    },
+    {
+      "hip": 61084,
+      "pmra": 27.94,
+      "pmRaCosDecFromVelocity": 27.90786579095274,
+      "differenceMasYr": -0.0321342090472605,
+      "pmdec": -264.33,
+      "pmDecFromVelocity": -264.3143552994763
+    },
+    {
+      "hip": 62434,
+      "pmra": -48.24,
+      "pmRaCosDecFromVelocity": -48.2403388449524,
+      "differenceMasYr": -0.0003388449523953341,
+      "pmdec": -12.82,
+      "pmDecFromVelocity": -12.816774638188269
+    },
+    {
+      "hip": 62956,
+      "pmra": 111.74,
+      "pmRaCosDecFromVelocity": 111.71703143633047,
+      "differenceMasYr": -0.02296856366952227,
+      "pmdec": -8.99,
+      "pmDecFromVelocity": -8.988501287685752
+    },
+    {
+      "hip": 65378,
+      "pmra": 121.23,
+      "pmRaCosDecFromVelocity": 121.204616383328,
+      "differenceMasYr": -0.025383616672002063,
+      "pmdec": -22.01,
+      "pmDecFromVelocity": -22.02981112423255
+    },
+    {
+      "hip": 67301,
+      "pmra": -121.23,
+      "pmRaCosDecFromVelocity": -121.23218070906232,
+      "differenceMasYr": -0.0021807090623156,
+      "pmdec": -15.56,
+      "pmDecFromVelocity": -15.545048524100553
+    }
+  ]
+}

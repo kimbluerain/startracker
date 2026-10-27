@@ -1,0 +1,18 @@
+# 离线银河与亮星纹理来源
+
+官方来源：https://svs.gsfc.nasa.gov/4851/ （Deep Star Maps 2020，读取2026-10-24）。银河坐标版本为2021-01-04修正之后的文件。plate carrée 2:1；经度0位于中央，经度向左增加，纬度北在上。归一化采样：u=(0.5-l/360) mod 1, v=0.5-b/180。保留文件原始像素方向，不翻转或旋转。
+
+- milkyway_2020_4k_gal.exr → milkyway-panorama.jpg：不含明亮Hipparcos/Tycho恒星的银河背景。
+- hiptyc_2020_4k_gal.exr → bright-stars-panorama.jpg：明亮恒星前景，可在银河隐藏时独立保留。
+- URL前缀：https://svs.gsfc.nasa.gov/vis/a000000/a004800/a004851/
+- 输出4096×2048；EXR线性RGB逐通道标准sRGB转换（小于等于0.0031308乘12.92，其余1.055*x^(1/2.4)-0.055），JPEG质量95；不改球面几何、不人为移动星体。sha256见docs/data/legacy-sky-maps.json。EXR源只本地保存，不进入Git。
+
+署名：NASA/Goddard Space Flight Center Scientific Visualization Studio；Gaia DR2: ESA/Gaia/DPAC。使用的两图不含星座连线，因此不使用该页面的星座连线资产。
+
+媒体条款：https://www.nasa.gov/nasa-brand-center/images-and-media/ （2026-10-24已读取）。NASA一般允许事实性教育/信息与图形模拟用途，要求署名，不暗示背书；未使用NASA标志、肖像或第三方标注版权图。此离线星图不表示NASA认可本应用。原始天文图是观测数据可视化，不能据此保证肉眼可见性；日月/银河方向和当前时间地点仍以本地计算为准。
+
+显示增强用于辨识，非物理亮度标定。主GPU星空、日月和银心使用同一准确选定时刻；旧CPU回退背景按分钟更新。
+
+计划页山湖背景：OpenAI image_gen 生成的装饰场景，并非用户现场照片或真实地形。生成日期2026-10-24，只作装饰，不用于AR、天体方位或真实地形遮挡。
+
+2026-10-26 高清分块银河：使用同一官方页面 milkyway_2020_16k_gal.exr，16384×8192，SHA256 ee023f03e99466b3829117c15a001269ba32a3fecb6012d0b2d41f201c955351。标准线性RGB→sRGB，保持银河经纬坐标；生成4K/8K/16K三级，每块内512×512并保留各边1像素邻域，经度wrap/纬度clamp，JPEG质量90；2K同源全景供加载兜底。672块＋兜底共29,248,397字节。构建源EXR仅留开发资料，不随App；生成脚本scripts/generate-sky-detail.py，原始与派生哈希见docs/data/sky-detail/。星空恒星现在由独立HYG真实数值绘制；保留旧全景仅用于旧CPU回退，非新高清星点来源。

@@ -1,0 +1,48 @@
+name: Astronomy Engine Unit Tests
+on: [push]
+jobs:
+  Astronomy-Engine:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ ubuntu-latest, macos-latest, windows-latest ]
+    steps:
+    - uses: actions/checkout@v4
+    - name: Add msbuild to path
+      if: startsWith(matrix.os, 'windows')
+      uses: microsoft/setup-msbuild@v1.1
+    - name: Init dotnet core
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 7.0.x
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.9'
+    - name: Install Python tools
+      run: python -m pip install --upgrade pip && pip install mypy
+    - name: Install documentation tools Linux
+      if: startsWith(matrix.os, 'ubuntu')
+      run: sudo apt install -y doxygen xsltproc cppcheck
+    - name: Install documentation tools macOS
+      if: startsWith(matrix.os, 'macOS')
+      run: HOMEBREW_NO_AUTO_UPDATE=1 brew install doxygen cppcheck
+    - name: Init Node.js 16
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16
+    - name: set up JDK 11
+      uses: actions/setup-java@v3
+      with:
+        distribution: 'zulu'
+        java-version: 11
+    - uses: gradle/wrapper-validation-action@v1
+
+    - name: Test Astronomy Engine Unix
+      if: startsWith(matrix.os, 'windows') == false
+      run: generate/commit_hook ${{runner.os}}
+
+    - name: Test Astronomy Engine Windows
+      if: startsWith(matrix.os, 'windows')
+      shell: cmd
+      run: call generate\commit_hook.bat

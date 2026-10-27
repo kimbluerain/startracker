@@ -1,0 +1,65 @@
+{
+  "rows": 45,
+  "metadata": {
+    "generatedUtc": "2026-10-23T03:28:45.913953+00:00",
+    "versions": {
+      "astropy": "7.2.0",
+      "pyerfa": "2.0.1.5",
+      "astropy-iers-data": "0.2026.10.19.0.52.1",
+      "numpy": "2.5.4",
+      "packaging": "26.3",
+      "PyYAML": "6.0.3"
+    },
+    "erfaVersion": "2.0.1",
+    "sofaVersion": "20231011",
+    "source": "Astropy coordinates Galactic/ICRS -> AltAz, ERFA apparent-place transforms; no Astronomy Engine used",
+    "pressureHpa": 0,
+    "refraction": "disabled",
+    "siteHeight": "WGS84 ellipsoid height 0 m, not a claim of sea-level orthometric height at these cities",
+    "distance": "Unit-spherical fixed directions at infinity; no proper motion, radial velocity or finite-distance parallax",
+    "iers": {
+      "tableFile": "iers-finals2000A-2026-10-19.all",
+      "sha256": "0baf00f67a39ab362a3e4f07d2a1f084842178523f56bcf5a861e7ac084d411a",
+      "package": "astropy-iers-data==0.2026.10.19.0.52.1",
+      "sourceUrl": "https://datacenter.iers.org/data/9/finals2000A.all",
+      "bundledSource": "https://github.com/astropy/astropy-iers-data",
+      "mjdRange": [
+        41684.0,
+        61682.0
+      ],
+      "auto_download": false,
+      "auto_max_age": null,
+      "degraded_accuracy": "warn",
+      "statusMeaning": {
+        "0": "IERS B measured",
+        "1": "IERS A measured",
+        "2": "IERS A predicted",
+        "-1": "before available range",
+        "-2": "beyond available range"
+      },
+      "futurePolicy": "Beyond-table UT1-UTC is clipped to boundary; polar motion uses Astropy 50-year mean 0.035,0.29 arcsec. ERFA UTC future conversion uses its latest leap-second table. Rows retain warnings; these are frozen model fixtures, not actual future UTC truth."
+    },
+    "sgrA": {
+      "adoptedIcrsRaDeg": 266.41681662499997,
+      "adoptedIcrsDecDeg": -29.00782497222222,
+      "source": "SIMBAD ICRS epoch J2000 radio coordinate; 2011AJ....142...35P",
+      "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=Sgr+A%2A",
+      "rawSourceFile": "simbad-sgr-a-radio-raw.json",
+      "paper": "https://ui.adsabs.harvard.edu/abs/2011AJ....142...35P",
+      "caveat": "Fixed physical radio reference at J2000; not proper-motion propagated Sgr A*. Different from Galactic l=0,b=0."
+    }
+  },
+  "altitudeRange": [
+    -79.19372912250229,
+    79.17486758917711
+  ],
+  "warningMessages": [
+    "(some) times are outside of range covered by IERS table, accuracy is degraded.",
+    "ERFA function \"d2dtf\" yielded 1 of \"dubious year (Note 5)\"",
+    "ERFA function \"dtf2d\" yielded 1 of \"dubious year (Note 6)\"",
+    "ERFA function \"taiutc\" yielded 1 of \"dubious year (Note 4)\"",
+    "ERFA function \"utctai\" yielded 1 of \"dubious year (Note 3)\"",
+    "ERFA function \"utcut1\" yielded 1 of \"dubious year (Note 3)\"",
+    "Tried to get polar motions for times after IERS data is valid. Defaulting to polar motion from the 50-yr mean for those. This may affect precision at the arcsec level. Please check your astropy.utils.iers.conf.iers_auto_url and point it to a newer version if necessary."
+  ]
+}

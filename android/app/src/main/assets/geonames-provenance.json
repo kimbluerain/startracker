@@ -1,0 +1,62 @@
+{
+  "source": "https://download.geonames.org/export/dump/cities15000.zip",
+  "retrievedDate": "2026-10-23",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "GeoNames contributors",
+  "sourceSha256": "6d9ec0783783fd382b632dc120a9e1d401020ac98552fc74d05f40e56ea719b2",
+  "rows": 34179,
+  "fields": [
+    "geonameid",
+    "name",
+    "namesAndAliases",
+    "country",
+    "latitude",
+    "longitude",
+    "ianaTimezone",
+    "population"
+  ],
+  "changes": "Selected fields only; gzip packaging. No coordinates or aliases invented. Elevation omitted: selected city assumes zero until user supplies elevation.",
+  "verifiedChineseAliases": {
+    "1796236": {
+      "name": "Shanghai",
+      "verifiedChineseNames": [
+        "上海",
+        "上海市"
+      ],
+      "latitude": "31.22222",
+      "longitude": "121.45806",
+      "zone": "Asia/Shanghai"
+    },
+    "1808926": {
+      "name": "Hangzhou",
+      "verifiedChineseNames": [
+        "杭州",
+        "杭州市"
+      ],
+      "latitude": "30.29365",
+      "longitude": "120.16142",
+      "zone": "Asia/Shanghai"
+    },
+    "1814870": {
+      "name": "Yiwu",
+      "verifiedChineseNames": [
+        "义乌",
+        "義烏縣"
+      ],
+      "latitude": "29.31506",
+      "longitude": "120.07676",
+      "zone": "Asia/Shanghai"
+    },
+    "1816670": {
+      "name": "Beijing",
+      "verifiedChineseNames": [
+        "北京",
+        "北京市"
+      ],
+      "latitude": "39.9075",
+      "longitude": "116.39723",
+      "zone": "Asia/Shanghai"
+    }
+  }
+}

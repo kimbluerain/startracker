@@ -1,0 +1,13 @@
+Offline city data © GeoNames contributors
+Source: https://download.geonames.org/export/dump/cities15000.zip
+Retrieved 2026-10-23. 34,179 city records.
+Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0):
+https://creativecommons.org/licenses/by/4.0/
+GeoNames: https://www.geonames.org/
+
+This app selects name, aliases, WGS84 coordinates, timezone, country, population
+and identifier fields and compresses them for offline search. It does not request
+GeoNames services at runtime. Names and Chinese aliases come from the source.
+City locations are city centers, not the user's position or a street address.
+Data is provided without warranties. No endorsement by GeoNames is implied.
+See geonames-provenance.json for source checksum and verified Chinese aliases.

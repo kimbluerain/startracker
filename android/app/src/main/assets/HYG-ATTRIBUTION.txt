@@ -1,0 +1,11 @@
+亮星数据：HYG v4.1，David Nash / Astronexus
+https://github.com/astronexus/HYG-Database
+固定版本：c7f7f883fe678cc7680169a50ccd7dcc49b060ce
+
+精确星座叠加从该版本选取25颗恒星，包含HIP编号、J2000赤经赤纬、赤经/赤纬自行及视星等。另有99,049颗视星等不大于9.5的背景恒星用于高清实时绘制，保存相同坐标/自行、星等及B-V颜色；259颗缺失颜色使用中性B-V=0.65，去除太阳，缺HIP记0且不作为重复身份。背景数据以little-endian float32紧凑记录，source CSV SHA256 d9f69fd86bbf90a4e4d52b4c5c53eacfa6dfc0bfdef85bfd94f095e0bebe4ebd。赤经从小时换算为度，运行时按观测时间传播坐标。数值子集与生成数值文件保留 CC BY-SA 4.0：
+https://creativecommons.org/licenses/by-sa/4.0/
+完整条款已随App离线提供。原始子集/来源/再生脚本保存在项目 reference/stars 与 scripts/generate-star-catalog.py；新增背景再生脚本scripts/generate-sky-detail.py与docs/data/sky-detail/。
+
+北斗七星、猎户座、仙后座、南十字座采用自绘简约连线，不是星座正式边界或艺术插画。北斗七星是大熊座中的星群。仅展示这四组，不宣称完整88星座或已识别照片里的所有星点。
+
+坐标为不含大气折射的几何方向；包含自行、岁差/章动和地球转动，不含有限距离视差、径向速度、光行差。目标计算容差0.05度；真实手机方向还受传感器和现场校准影响。

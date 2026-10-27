@@ -1,0 +1,76 @@
+{
+  "documents": [
+    {
+      "id": "notice",
+      "title": "来源、修改与署名",
+      "path": "licenses/NOTICE.txt",
+      "sha256": "0459d342312ae59b4f83851b7862709342c0e791ec7661ca4a36e2de0a6888dc"
+    },
+    {
+      "id": "gpl",
+      "title": "GPL v3 · startracker 与 Heliodos",
+      "path": "licenses/GPL-3.0.txt",
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    {
+      "id": "mit",
+      "title": "MIT · Astronomy Engine",
+      "path": "licenses/Astronomy-MIT.txt",
+      "sha256": "a76df666a7db8a06f599d08e07c3ff74c4b250b50b49c43353af2bd5bb34604e"
+    },
+    {
+      "id": "apache",
+      "title": "Apache 2.0 · AndroidX 等运行库",
+      "path": "licenses/Apache-2.0.txt",
+      "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+    },
+    {
+      "id": "geonames",
+      "title": "GeoNames 数据来源与修改",
+      "path": "licenses/GeoNames.txt",
+      "sha256": "b9e7d6da8a7bf65b417b1f834a1f38160c716cfe3e0ea045fed15cb0bad5ed23"
+    },
+    {
+      "id": "ccby",
+      "title": "CC BY 4.0 · 完整条款",
+      "path": "licenses/CC-BY-4.0.txt",
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    {
+      "id": "erfa",
+      "title": "ERFA · 条款与 SOFA 来源说明",
+      "path": "licenses/ERFA.txt",
+      "sha256": "e9b9d43aa9ad17fe6123866f4674b697381a27250a24e7a41765bbefccc521cf"
+    },
+    {
+      "id": "embedded_1",
+      "title": "随运行库附带的许可原文 1",
+      "path": "licenses/embedded/809fa1ed21450f59827d1e9aec720bbc4b687434fa22283c6cb5dd82a47ab9c0.txt",
+      "sha256": "809fa1ed21450f59827d1e9aec720bbc4b687434fa22283c6cb5dd82a47ab9c0"
+    },
+    {
+      "id": "dependencies",
+      "title": "运行依赖与校验和（73 个制品）",
+      "path": "licenses/DEPENDENCIES.txt",
+      "sha256": "1d43ccd7c4e0dbdaeb839db1ae52a07ea2c39c837d7cc8a14be42079658c60cb"
+    },
+    {
+      "id": "nasa_star_maps",
+      "title": "NASA / ESA · 离线星图与背景来源",
+      "path": "licenses/NASA-Star-Maps.txt",
+      "sha256": "1c9b04d44c41d7b975cc94592661bc624d9c9ea269e9640d09a7e66880c28194"
+    },
+    {
+      "id": "hyg",
+      "title": "HYG · 亮星数据来源与修改",
+      "path": "licenses/HYG-Star-Catalog.txt",
+      "sha256": "1e9066476fd54b6fcddeab8c921e4b96ab334dee26a6f0f40e0b03febcae9400"
+    },
+    {
+      "id": "ccbysa",
+      "title": "CC BY-SA 4.0 · 星表完整条款",
+      "path": "licenses/CC-BY-SA-4.0.txt",
+      "sha256": "cde7883b9050a1104f4ac19a1572aafd6e5d7323b68351aaf51fbf4beba54966"
+    }
+  ]
+}

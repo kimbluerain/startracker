@@ -1,0 +1,18 @@
+[
+  {
+    "source": "milkyway_2020_4k_gal.exr",
+    "sourceSha256": "fad63b36aa632c691d521cd9d8b828de9d29b4c2784276eec44e54c6cb159a49",
+    "output": "milkyway-panorama.jpg",
+    "outputSha256": "2ec68c75d2fc336a11be4ba532b9ffbd5cd597797d14f1fbe30486528af2eb90",
+    "width": 4096,
+    "height": 2048
+  },
+  {
+    "source": "hiptyc_2020_4k_gal.exr",
+    "sourceSha256": "7ddcebdd7f29815a32dffc62b57223adc351a0b3ae6badba38748e13a648892e",
+    "output": "bright-stars-panorama.jpg",
+    "outputSha256": "b70bf72f1f980ec9391a6f48017c55babb672f2793804c278f5bbf24f7ee36ff",
+    "width": 4096,
+    "height": 2048
+  }
+]

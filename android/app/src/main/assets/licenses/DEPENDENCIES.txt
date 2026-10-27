@@ -1,0 +1,296 @@
+私用 APK 实际运行依赖
+配置：privatePreviewRuntimeClasspath
+原始 AAR/JAR SHA256；完整 POM 证据在本地源码 docs/dependencies/poms。
+所有以下外部制品的 POM/父 POM 声明 Apache 2.0；随包原文与完整主条款均可离线阅读。
+
+androidx.activity:activity-compose:1.13.0
+activity-compose-1.13.0.aar
+SHA256 2b5da3033d4924e833868e140c3edfc0c03208710b6b9fb2c9d9a47560ba55fa
+
+androidx.activity:activity-ktx:1.13.0
+activity-ktx-1.13.0.aar
+SHA256 b5541dc5f74e35389f1e9fdca8b5770c49d2c1360de16f398ce5c1e07a003244
+
+androidx.activity:activity:1.13.0
+activity-1.13.0.aar
+SHA256 bd4f19a5f00effed0eecad0a310b1f2169b9fc66236a3ba743a222eb77747ee1
+
+androidx.annotation:annotation-experimental:1.4.1
+annotation-experimental-1.4.1.aar
+SHA256 6bd4c7c7476f8260cd3bdbb81183583e93fc9f790c27dea7dc314181cbf87aa0
+
+androidx.annotation:annotation-jvm:1.9.1
+annotation-jvm-1.9.1.jar
+SHA256 1e343917ebf27ba96fe4dc52b1cad7fd32b738fbc6355bb6cd5b3b305d7212d0
+
+androidx.arch.core:core-common:2.2.0
+core-common-2.2.0.jar
+SHA256 65308a06b1c00ee186cb9e19321383f043b993813f1522c47f4a3e3303bdba41
+
+androidx.arch.core:core-runtime:2.2.0
+core-runtime-2.2.0.aar
+SHA256 a1be5e0caa2b07623862af6ae21b3ab0718123245184d0e30dea81b53f990a47
+
+androidx.autofill:autofill:1.0.0
+autofill-1.0.0.aar
+SHA256 c9468f56e05006ea151a426c54957cd0799b8b83a579d2846dd22061f33e5ecd
+
+androidx.collection:collection-jvm:1.5.0
+collection-jvm-1.5.0.jar
+SHA256 70b35924e4babcdffa37d0e575ee039c56a2d97123342624c48b603233704341
+
+androidx.collection:collection-ktx:1.5.0
+collection-ktx-1.5.0.jar
+SHA256 939b4a8697640e77d83e4e8b4c4a9d18f8130198c5961194af8dd9db9dc7c353
+
+androidx.compose.animation:animation-android:1.12.1
+animation.aar
+SHA256 4a619ca869b9724e9cf6127ead53d8fb7dd8601a931c4006b15caf5bb3bf19f8
+
+androidx.compose.animation:animation-core-android:1.12.1
+animation-core.aar
+SHA256 29e26959b2c5645c53a42aa8302570bf8cc3644755d6ca97bf1028d08a665b97
+
+androidx.compose.foundation:foundation-android:1.12.1
+foundation.aar
+SHA256 444749ea7b5a563e530504b9035c87e47ed0fb62b9f7ba00e90af8aa81e6bfb8
+
+androidx.compose.foundation:foundation-layout-android:1.12.1
+foundation-layout.aar
+SHA256 274370a88621e001417e76c2d862ffad61ebc8ca2d9f151c7b60dd02d65ebe51
+
+androidx.compose.material3:material3-android:1.4.0
+material3.aar
+SHA256 3a37e8b36df3822fe1e6059f0f9fafda8800388860477624ac1b9422c418a36e
+
+androidx.compose.material:material-ripple-android:1.12.1
+material-ripple.aar
+SHA256 795d8742165875ee96383ca64ff4cd8bc12b83efb0918f68472e7c2f9d5826df
+
+androidx.compose.runtime:runtime-android:1.12.1
+runtime.aar
+SHA256 1701a61d06d2f6144f2cd8b015abbc5ad6952eacb70c24c208cdfd2bb188dde7
+
+androidx.compose.runtime:runtime-annotation-android:1.12.1
+runtime-annotation.aar
+SHA256 071d6200f5f34ffb5ce69cc19ee8db577c188832bb472779213d4633eca26565
+
+androidx.compose.runtime:runtime-retain-android:1.12.1
+runtime-retain.aar
+SHA256 6e32111eed0f67ef2ae70c2d9c83cb6bfb54095fe2fb2fdc800febd14d0d7a61
+
+androidx.compose.runtime:runtime-saveable-android:1.12.1
+runtime-saveable.aar
+SHA256 0c83d47820fbc8ffb6e3e49311ccd4755676d6f94bb8c6d8564ab4c799df8779
+
+androidx.compose.ui:ui-android:1.12.1
+ui.aar
+SHA256 3f1ae17e237d9dc0a2a0f42cb04b85b8de6e12f67adc5f5c12173fe31e501cb2
+
+androidx.compose.ui:ui-geometry-android:1.12.1
+ui-geometry.aar
+SHA256 09a23c76f5d52ea5ec61d4a78d4876940f0f033c975e5c604246f89a63532754
+
+androidx.compose.ui:ui-graphics-android:1.12.1
+ui-graphics.aar
+SHA256 1e6451f05ad569e306e7022b3c41d16aa75080bb2c99b59c4d67e7dbf6f428e7
+
+androidx.compose.ui:ui-text-android:1.12.1
+ui-text.aar
+SHA256 e710a5776966537df09a2e5c4ca1dacc14ca11d7b20a6af16c0e992ddd3aecd3
+
+androidx.compose.ui:ui-unit-android:1.12.1
+ui-unit.aar
+SHA256 97d2bf062395d981435bc8d571b1d5d75587a7f26f3444671b2287f233e18ae7
+
+androidx.compose.ui:ui-util-android:1.12.1
+ui-util.aar
+SHA256 cd47f06626c19a06086e16823a32e49e0a0c7d903451668da2f777d063507aa5
+
+androidx.concurrent:concurrent-futures:1.1.0
+concurrent-futures-1.1.0.jar
+SHA256 0ce067c514a0d1049d1bebdf709e344ed3266fe9744275682937cdcb13334e9e
+
+androidx.core:core-ktx:1.18.0
+core-ktx-1.18.0.aar
+SHA256 c7c511e3df838fcbcb61ace36944de6bb7c10eb597be546974f001119939c85d
+
+androidx.core:core-viewtree:1.0.0
+core-viewtree-1.0.0.aar
+SHA256 dc1b678d58ebcf2bfa1587be68ff826694ce3d221251b9ef30d4d4b36297e6de
+
+androidx.core:core:1.18.0
+core-1.18.0.aar
+SHA256 311d83ac67d394076ec21d12ed2d10a44b59cb2929b7dce00e5a90a93842e37d
+
+androidx.customview:customview-poolingcontainer:1.0.0
+customview-poolingcontainer-1.0.0.aar
+SHA256 3584102fc49bf399c56e3b7be4bfe12000c46112320cd8cf85cc0a8f93f3e752
+
+androidx.datastore:datastore-android:1.1.1
+datastore-release.aar
+SHA256 fce724038fea3bdef7b0d1aaf10cda6614b61bec66571750cc9be7048b950119
+
+androidx.datastore:datastore-core-android:1.1.1
+datastore-core-release.aar
+SHA256 883abc911e4b14119959e44e20a520523f59c303e834d6b325007b3ee5e9cb6c
+
+androidx.datastore:datastore-core-okio-jvm:1.1.1
+datastore-core-okio-jvm-1.1.1.jar
+SHA256 5071d03c7be9555fd81e5bd522b490a06a89694e4b937f307da72bc74e33c34a
+
+androidx.datastore:datastore-preferences-android:1.1.1
+datastore-preferences-release.aar
+SHA256 0f15760838ff0413521ab1596e8ac5c999c3822d1fcc3f38ce6d6f562aeebbac
+
+androidx.datastore:datastore-preferences-core-jvm:1.1.1
+datastore-preferences-core-jvm-1.1.1.jar
+SHA256 bd2c7f41cb7d6e857903a03aa4da4dddc831445bd4148f1ac8d0a81f509d0628
+
+androidx.emoji2:emoji2:1.4.0
+emoji2-1.4.0.aar
+SHA256 433febd3434a45667176c76a64f3f205ca6335a6b544c5b5d57f25a38a375242
+
+androidx.graphics:graphics-path:1.0.1
+graphics-path-1.0.1.aar
+SHA256 8ca4032b6d79b351f0b59ad4b580eddbb9423e1652f7c958830687f1eee2ec03
+
+androidx.interpolator:interpolator:1.0.0
+interpolator-1.0.0.aar
+SHA256 33193135a64fe21fa2c35eec6688f1a76e512606c0fc83dc1b689e37add7732a
+
+androidx.lifecycle:lifecycle-common-java8:2.11.0
+lifecycle-common-java8-2.11.0.jar
+SHA256 895e71679cd319db8140664d650af6695b0530f5896be9b8ecccd24cc4f6674f
+
+androidx.lifecycle:lifecycle-common-jvm:2.11.0
+lifecycle-common-jvm-2.11.0.jar
+SHA256 e6a66e67b9f63a0fb6344f165c1d872376e5fe6d235bffb138af45122cf452a9
+
+androidx.lifecycle:lifecycle-livedata-core:2.11.0
+lifecycle-livedata-core-2.11.0.aar
+SHA256 39b26ef1e081fc88d7054ff1a63d0a5d71876373c33a711ab789c8228d025ad1
+
+androidx.lifecycle:lifecycle-process:2.11.0
+lifecycle-process-2.11.0.aar
+SHA256 9743f0c7baf27d34497b7e9a1cd497d8260251b03124507963abfaad66c3f552
+
+androidx.lifecycle:lifecycle-runtime-android:2.11.0
+lifecycle-runtime.aar
+SHA256 8711865f8d3603bc05decc03bb42aab2faa8d8bc55b3b12a0a8e516b562b60ca
+
+androidx.lifecycle:lifecycle-runtime-compose-android:2.11.0
+lifecycle-runtime-compose.aar
+SHA256 7b31489e6e162143c481f14e1ae5a4dc089f8ec58e65976a0502b910c641987f
+
+androidx.lifecycle:lifecycle-runtime-ktx-android:2.11.0
+lifecycle-runtime-ktx.aar
+SHA256 1fead96607f8b4ebd2bc5840c6fcf08b09fc47ceb1665e4b381dce80b19f32a0
+
+androidx.lifecycle:lifecycle-viewmodel-android:2.11.0
+lifecycle-viewmodel.aar
+SHA256 509aa5c0711e61a1571024b4f8431dc9aa20960d23cbadb01f21a33fd864352a
+
+androidx.lifecycle:lifecycle-viewmodel-compose-android:2.11.0
+lifecycle-viewmodel-compose.aar
+SHA256 2bafd402807bd4af05c06cf58c48cbdad09521e2145273faae90908b7712f689
+
+androidx.lifecycle:lifecycle-viewmodel-ktx:2.11.0
+lifecycle-viewmodel-ktx-2.11.0.aar
+SHA256 230af6c866076d320d92c22c7c44bb52afca97f6892ddf987e2906ef2919998f
+
+androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.11.0
+lifecycle-viewmodel-savedstate.aar
+SHA256 1761707c1ddee002bd97e1a0889a5016f7cd6bd8e0b6b069bcba8b2523d63723
+
+androidx.navigationevent:navigationevent-android:1.0.0
+navigationevent.aar
+SHA256 cda4bb83d1c892a208732e99c2d59e4f247ab5c23a1d2524fc004db2e4e9a780
+
+androidx.navigationevent:navigationevent-compose-android:1.0.0
+navigationevent-compose.aar
+SHA256 5cee018dbe130b538d2c43cc6f383a109a98f19ba9c8d7a6dda8ca90a2034671
+
+androidx.profileinstaller:profileinstaller:1.4.0
+profileinstaller-1.4.0.aar
+SHA256 d502141fcce902430f62b674c32aecd0f75262e7ee2cd15c74adb617cd13130a
+
+androidx.savedstate:savedstate-android:1.4.0
+savedstate.aar
+SHA256 1656ce62cd233d488bdbbd42e533b80b22435b7a690acae6dbe7302392512c14
+
+androidx.savedstate:savedstate-compose-android:1.4.0
+savedstate-compose.aar
+SHA256 0f0ae3032d6c6eea834ee22179c8976160d09d841d30e47f53f56b1b3438774b
+
+androidx.savedstate:savedstate-ktx:1.4.0
+savedstate-ktx-1.4.0.aar
+SHA256 23593939446bc5a154a1e35fddd87b82f19e2adf072207f115bf29a8b431c1d3
+
+androidx.startup:startup-runtime:1.1.1
+startup-runtime-1.1.1.aar
+SHA256 e0a6329a371262fe4c450372b70fdaf33b769ef6917094723787cfce896b1dd3
+
+androidx.tracing:tracing:1.2.0
+tracing-1.2.0.aar
+SHA256 6faa90390d1fdbf0adb9a99bf99de67b94c6c6f35aea9510593a9d17973736a2
+
+androidx.versionedparcelable:versionedparcelable:1.1.1
+versionedparcelable-1.1.1.aar
+SHA256 57e8d93260d18d5b9007c9eed3c64ad159de90c8609ebfc74a347cbd514535a4
+
+androidx.window:window-core-android:1.5.0
+window-core.aar
+SHA256 d0d50db0756194a6d49a66ad8dafd17b24b4c5fbd8379375056e2eb9bdfeaf22
+
+androidx.window:window:1.5.0
+window-1.5.0.aar
+SHA256 5de2d48aa578402f46deb5294a955cee62f0c7d8c1840ef626fc7afb8abe22f9
+
+com.google.guava:listenablefuture:1.0
+listenablefuture-1.0.jar
+SHA256 e4ad7607e5c0477c6f890ef26a49cb8d1bb4dffb650bab4502afee64644e3069
+
+com.squareup.okio:okio-jvm:3.4.0
+okio-jvm-3.4.0.jar
+SHA256 0139ec7a506dbbd54cad62291b019cb850534be097c8c66c1000d5fbe8edef3e
+
+org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.9.22
+kotlin-android-extensions-runtime-1.9.22.jar
+SHA256 f00537c7023e604933f6a9563b1bb3b83e61fbfd2cc3d0e9900d616bab6862a4
+
+org.jetbrains.kotlin:kotlin-parcelize-runtime:1.9.22
+kotlin-parcelize-runtime-1.9.22.jar
+SHA256 f0077f35ec828e148ac92d0c6aa141a732b5eb7a4a391679aeefa59fa9a1a5cc
+
+org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.0
+kotlin-stdlib-jdk7-1.8.0.jar
+SHA256 4c889d1d9803f5f2eb6c1592a6b7e62369ac7660c9eee15aba16fec059163666
+
+org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0
+kotlin-stdlib-jdk8-1.8.0.jar
+SHA256 05b62804441b0c9a1920b6b7d5cf7329a4e24b6258478e32b1f046ca01900946
+
+org.jetbrains.kotlin:kotlin-stdlib:2.4.21
+kotlin-stdlib-2.4.21.jar
+SHA256 bd8250210584cb659847dce9cda660f8e9906e5def7fbebcea93dc6dcb6a88a3
+
+org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0
+kotlinx-coroutines-android-1.9.0.jar
+SHA256 bd783acd2f9738845d58380f46f45b5cde95d0cb03027d56725338b26bfc4d72
+
+org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.9.0
+kotlinx-coroutines-core-jvm-1.9.0.jar
+SHA256 ad89c2892235e670f222d819cb3d81188143cb19a05b59df9889ae4269f5c70a
+
+org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:1.7.3
+kotlinx-serialization-core-jvm-1.7.3.jar
+SHA256 f0adde45864144475385cf4aa7e0b7feb27f61fcf9472665ed98cc971b06b1eb
+
+org.jetbrains:annotations:23.0.0
+annotations-23.0.0.jar
+SHA256 7b0f19724082cbfcbc66e5abea2b9bc92cf08a1ea11e191933ed43801eb3cd05
+
+org.jspecify:jspecify:1.0.0
+jspecify-1.0.0.jar
+SHA256 1fad6e6be7557781e4d33729d49ae1cdc8fdda6fe477bb0cc68ce351eafdfbab

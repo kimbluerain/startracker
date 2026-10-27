@@ -1,0 +1,14 @@
+[
+  {
+    "file": "hygdata_v41.csv",
+    "url": "https://raw.githubusercontent.com/astronexus/HYG-Database/c7f7f883fe678cc7680169a50ccd7dcc49b060ce/hyg/CURRENT/hygdata_v41.csv",
+    "bytes": 33932548,
+    "sha256": "d9f69fd86bbf90a4e4d52b4c5c53eacfa6dfc0bfdef85bfd94f095e0bebe4ebd"
+  },
+  {
+    "file": "milkyway_2020_16k_gal.exr",
+    "url": "https://svs.gsfc.nasa.gov/vis/a000000/a004800/a004851/milkyway_2020_16k_gal.exr",
+    "bytes": 373794299,
+    "sha256": "ee023f03e99466b3829117c15a001269ba32a3fecb6012d0b2d41f201c955351"
+  }
+]

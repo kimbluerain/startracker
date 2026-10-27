@@ -1,0 +1,10 @@
+{
+  "format": "STF1, LE count, LE (int32 HIP, 6 float32 RAdeg/Decdeg/pmRAcosDec/pmDec/mag/B-V)",
+  "epoch": "ICRS J2000; proper motion mas/year",
+  "count": 99049,
+  "magnitudeLimit": 9.5,
+  "missingColorNeutralBV065": 259,
+  "sourceSha256": "d9f69fd86bbf90a4e4d52b4c5c53eacfa6dfc0bfdef85bfd94f095e0bebe4ebd",
+  "bytes": 2773380,
+  "sha256": "c6394540a6fc54a2ed4da8aa7c325546bffb6bebdf438208c12df69af09a529a"
+}

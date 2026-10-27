@@ -1,0 +1,58 @@
+startracker — modified astronomy application
+Updated 2026-10-27. This is an independent experimental build, not an upstream release.
+Source: https://github.com/kimbluerain/startracker
+
+Application foundation: Heliodos by Daniel Kraft / domob1812, GPLv3.
+https://github.com/domob1812/heliodos
+Pinned source: 22f270be51adfd7c02bf619785b40664b394986c
+Modifications include a separate package ID, Chinese Compose interface, location
+and time planning, Sun/Moon/Milky Way calculations, camera and sky-map projection,
+frosted-glass controls, offline catalogs, tiled imagery and optional star twinkle.
+GPL terms are in LICENSE; original copyright and provenance are retained in android/.
+
+Astronomy Engine, Copyright (c) 2019-2025 Don Cross, MIT.
+https://github.com/domob1812/astronomy
+Pinned source: ac3c84ca34696bcc299704d2fe2d6084ec2728cc
+Compiled through astronomy-jvm; source and MIT license retained.
+
+GeoNames contributors, cities15000 snapshot dated 2026-10-23, CC BY 4.0.
+https://download.geonames.org/export/dump/cities15000.zip
+34,179 cities; selected fields and gzip compression. City centers are not on-site fixes.
+Original ZIP SHA256: 6d9ec0783783fd382b632dc120a9e1d401020ac98552fc74d05f40e56ea719b2
+Bundled provenance and full terms: android/app/src/main/assets/geonames-provenance.json
+and android/app/src/main/assets/licenses/.
+
+Galactic coordinate constants: ERFA 2.0.1 eraG2icrs, Copyright (C) 2013-2023
+NumFOCUS Foundation. ERFA BSD-style terms and SOFA provenance are bundled;
+the application does not bundle the SOFA library.
+
+HYG v4.1 by David Nash / Astronexus, CC BY-SA 4.0.
+https://github.com/astronexus/HYG-Database
+Pinned source: c7f7f883fe678cc7680169a50ccd7dcc49b060ce
+Derived data: 25 precise overlay stars and 99,049 background stars of magnitude
+<=9.5, coordinate/unit conversion and compact storage. Derived numeric data retain
+CC BY-SA 4.0, distinct from the app code license. See docs/data/star-catalog.md
+and bundled HYG attribution/legalcode for full modification details.
+
+Deep Star Maps 2020: NASA/Goddard Space Flight Center Scientific Visualization
+Studio; Gaia DR2: ESA/Gaia/DPAC. https://svs.gsfc.nasa.gov/4851/
+Modified from linear RGB to sRGB JPEG; 16K source tiled into 4K/8K/16K levels with
+pixel gutters and a 2K fallback; legacy 4K maps retained. Scientific coordinates
+are preserved. Sources, hashes and conversions: docs/data/ and bundled sky/ATTRIBUTION.txt.
+No NASA logo or endorsement is claimed. Imagery is separate from numerical positions.
+
+The planning-page landscape is an OpenAI image_gen-generated decorative scene,
+not an observation, location photograph or terrain model. Launcher and interface
+vectors are project artwork, not Apple, Star Walk, Sky Map or NASA brand assets.
+
+AndroidX/Compose, Kotlin, Coroutines, Okio and other resolved runtime artifacts:
+versions, SHA256, original POM evidence and full license texts are retained in
+android/app/src/main/assets/licenses/runtime-dependencies.json and docs/dependencies/.
+Gradle lockfiles and verification metadata also preserve build/test inputs.
+HSV-Alpha Color Picker source is retained with its Apache-2.0 LICENSE/NOTICE;
+it is not an app runtime dependency.
+
+Source and build scripts are provided in this repository. No signing keys are
+included. Local debug builds use the developer's own Android debug certificate.
+This preview has no completed outdoor AR angular-accuracy acceptance; phone
+sensor/camera alignment is distinct from numerical astronomy calculations.
